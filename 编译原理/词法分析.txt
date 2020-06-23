@@ -1,0 +1,309 @@
+#include<iostream>//对于界符字符字符串判断使用if其他判断用自动机
+#include<string>
+#include<set>
+#include <algorithm>
+#include<fstream>
+#include<map>
+#include<vector>
+using namespace std;
+int chart[6][256];//状态转移表
+set<string> keyword={"include","iostream","string","set","int","char","using","namespace",\
+                    "std","math","if","else","elsif","main","void","float","define","const"\
+                    ,"new","do","while","false","true"};//关键词表
+set<string> mark={"+","-","*","/",">=","<=","==",">","<","=","{","}",",",";","(",")","[","]","#",">>"};//界符表
+map<string,int> IT,cT,ST,CT,KT,PT;//标识符,字符，字符串，常数，关键字，界符
+string a="@";
+int ISPT(string strline,int i,int lie,int row)//是否为界符
+{
+    string newline="",newline1="",newline2="";
+    int j;
+    newline+=strline[i];
+    newline1+=strline[i];
+    i++;
+    newline2+=strline[i];
+    if(mark.find(newline2)!=mark.end())//找到一个字符的界符
+        {
+            newline+=strline[i];//判断连续的两个字符是不是界符
+            if(mark.find(newline)!=mark.end())//若存在界符表格中
+            {
+                cout<<"  "<<newline<<"            "<<"界符";
+                if(PT.find(newline)==PT.end())//如果在PT中则不在PT中则需要存入PT中
+                {    
+                    j=PT[a];
+                    PT[newline]=j;
+                    PT[a]=++j;
+                }
+                cout<<"            "<<"("<<row<<","<<lie<<")"<<"            P"<<","<<PT[newline]<<endl;
+            }
+            else//若连续的两个字符不是界符
+            {
+                i--;
+                cout<<"  "<<newline[0]<<"             "<<"界符";
+                if(PT.find(newline1)==PT.end())//如果在PT中则不在PT中则需要存入PT中
+                {
+                    j=PT[a];
+                    PT[newline1]=j;
+                    PT[a]=++j;
+                }
+                cout<<"            "<<"("<<row<<","<<lie<<")"<<"            P"<<","<<PT[newline1]<<endl;
+                lie++;
+                cout<<"  "<<newline[1]<<"             "<<"界符";
+                if(PT.find(newline2)==PT.end())//如果在PT中则不在PT中则需要存入PT中
+                {
+                    j=PT[a];
+                    PT[newline2]=j;
+                    PT[a]=++j;
+                }
+                cout<<"            "<<"("<<row<<","<<lie<<")"<<"            P"<<","<<PT[newline2]<<endl;
+            }
+        }
+    else
+    {
+        i--;
+        i--;
+        cout<<"  "<<newline[0]<<"             "<<"界符";
+        if(PT.find(newline1)==PT.end())//如果在PT中则不在PT中则需要存入PT中
+        {
+            j=PT[a];
+            PT[newline1]=j;
+            PT[a]=++j;
+        }
+        cout<<"            "<<"("<<row<<","<<lie<<")"<<"            P"<<","<<PT[newline1]<<endl;
+    }
+    return i;
+}
+int IScT(string strline,int i,int row,int lie)//判断是否为字符
+{
+    string newline="";
+    int j;
+    newline+='\'';
+    i++;
+    newline+=strline[i];
+    i++;
+    if(strline[i]!='\'')//若第三个字符不是‘就报错
+    {
+        cout<<"  "<<"error"<<"         "<<"error";
+        cout<<"            "<<"("<<row<<","<<lie<<")"<<"            "<<"error"<<endl;
+    }     
+    else
+    {
+        newline+=strline[i];
+        cout<<"  "<<newline<<"            "<<"字符";//输出该字符并保存在cT表中
+        if(cT.find(newline)!=cT.end())
+        {
+            j=cT[a];
+            cT[newline]=j;
+            cT[a]=++j;
+        }
+        cout<<"            "<<"("<<row<<","<<lie<<")"<<"            c"<<","<<cT[newline]<<endl;
+    }
+    return i;
+}
+int ISCT(string strline,int i,int row,int lie)//是否为字符串
+{   string newline="";
+    int j;
+    newline+='\"';
+    i++;
+    int k;
+    for(k=i;k<strline.size();k++)
+    {
+        newline+=strline[k];
+        if(strline[k]=='\"')
+            break;
+        if(strline[k]=='@')//若不以“结尾则报错
+            {
+                cout<<"  "<<"error"<<"         "<<"error";
+                cout<<"            "<<"("<<row<<","<<lie<<")"<<"            "<<"error"<<endl;
+                break;
+            }
+    }
+    i=k;
+    if(i!=strline.size()-1)
+    {
+        cout<<"  "<<newline;
+        for(int jj=0;jj<13-newline.size();jj++)
+            cout<<" ";
+        cout<<"字符串";//将字符串输出并保存在CT表中
+        if(CT.find(newline)!=CT.end())
+        {
+            j=CT[a];
+            CT[newline]=j;
+            CT[a]=++j;
+        }
+        cout<<"           "<<"("<<row<<","<<lie<<")"<<"            C"<<","<<CT[newline]<<endl;
+    } 
+    return i;
+}
+int state(string strline,int i,int row,int lie)//自动机
+{
+    int state1=1,state2=1,kk,j;
+    string newline="";
+    for(kk=i;kk<strline.size();kk++)
+    {
+        state2=state1;
+        state1=chart[state1][strline[kk]];//状态转移
+        if(state1==0)
+            break;
+        newline+=strline[kk];
+    }
+    switch(state2)//查看最终态
+    {
+        case 2://为2时是标识符
+        {
+            if(keyword.find(newline)==keyword.end())//是否在关键字表中
+            {
+                cout<<"  "<<newline;
+                for(int jj=0;jj<13-newline.size();jj++)
+                    cout<<" ";
+                cout<<"标识符";//输出并保存在IT表中
+                if(IT.find(newline)==IT.end())
+                {
+                    j=IT[a];
+                    IT[newline]=j;
+                    IT[a]=++j;
+                }
+                cout<<"           "<<"("<<row<<","<<lie<<")"<<"            I"<<","<<IT[newline]<<endl;
+            }
+            else//在关键字表中
+            {
+                cout<<"  "<<newline;
+                for(int jj=0;jj<13-newline.size();jj++)
+                    cout<<" ";
+                cout<<"关键字";//输出并保存在KT表中
+                if(KT.find(newline)==KT.end())
+                {
+                    j=KT[a];
+                    KT[newline]=j;
+                    KT[a]=++j;
+                }
+                cout<<"           "<<"("<<row<<","<<lie<<")"<<"            K"<<","<<KT[newline]<<endl;
+            }
+            break;
+        }
+        case 3://最终态为3状态
+        {
+            cout<<"  "<<newline;
+            for(int jj=0;jj<13-newline.size();jj++)
+                cout<<" ";
+            cout<<"常数";//输出并保存在常数表中
+            if(ST.find(newline)==ST.end())
+                {
+                    j=ST[a];
+                    ST[newline]=j;
+                    ST[a]=++j;
+                }
+            cout<<"            "<<"("<<row<<","<<lie<<")"<<"            S"<<","<<ST[newline]<<endl;
+            break;
+        }
+        case 5://最终态为5状态
+        {
+            cout<<"  "<<newline;
+            for(int jj=0;jj<13-newline.size();jj++)
+                cout<<" ";
+            cout<<"常数";//输出并保存在ST中
+            if(ST.find(newline)==ST.end())
+                {
+                    j=ST[a];
+                    ST[newline]=j;
+                    ST[a]=++j;
+                }
+            cout<<"            "<<"("<<row<<","<<lie<<")"<<"            S"<<","<<ST[newline]<<endl;
+            break;
+        }
+        default://其余态报错
+        {
+            cout<<"  "<<"error"<<"         "<<"error";
+            cout<<"           "<<"("<<row<<","<<lie<<")"<<"            "<<"error"<<endl;
+        }
+    }
+    i=kk-1;
+    return i;
+    
+}
+int main()
+{   
+    IT[a]=0;
+    cT[a]=0;
+    ST[a]=0;
+    CT[a]=0;
+    KT[a]=0;
+    PT[a]=0;//表的初始化
+    for(int hh=0;hh<6;hh++)//状态转移方程初始化
+    {
+        for(int kk=0;kk<256;kk++)
+            chart[hh][kk]=0;
+    }
+    for(int hh=65;hh<=90;hh++)
+    {
+        chart[1][hh]=2;
+        chart[2][hh]=2;
+    }
+    for(int hh=97;hh<=122;hh++)
+    {
+        chart[1][hh]=2;
+        chart[2][hh]=2;
+    }
+    for(int hh=48;hh<=57;hh++)
+    {
+        chart[1][hh]=3;
+        chart[3][hh]=3;
+        chart[4][hh]=5;
+        chart[5][hh]=5;
+    }
+    chart[3][46]=4;
+    char *filePath = (char*)"in.txt";//打开文件
+    ifstream file;
+    int i,row=-1,lie=0;
+    file.open(filePath,ios::in);
+    if(!file.is_open())
+        return 0;
+    string strline,ss;
+    cout<<"  词"<<"          "<<"  词性"<<"          "<<"  位置"<<"          "<<"  token序列"<<endl;
+    while(getline(file,strline))
+    {
+        row++;//行
+        lie=0;//列
+        if(strline.empty())
+            continue;
+        strline=strline+'@';
+        for(i=0;i<strline.size();i++)
+        {
+            
+            ss="";
+            ss+=strline[i];
+            if(strline[i]==' '||strline[i]=='\t')//过滤空格和换行符
+                continue;
+            else if(strline[i]=='@')//每行以@结尾
+                break;
+            else if(strline[i]=='\'')
+            {
+                i=IScT(strline,i,row,lie);//是否为字符
+            }
+            else if(strline[i]=='\"')
+            {
+                i=ISCT(strline,i,row,lie);//是否为字符串
+            }
+            else if(mark.find(ss)!=mark.end())
+            {
+                int kk=0;
+                kk=ISPT(strline,i,lie,row);  //是否为界符
+                if(kk==i)
+                {
+                    i++;
+                    lie++;
+                }
+                else if(kk>i)
+                {
+                    i++;
+                }
+            }
+            else
+            {
+                i=state(strline,i,row,lie);//其余状态
+            }
+            lie++;
+        }              
+    }
+    system("pause");
+    return 0;
+}

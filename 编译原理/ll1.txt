@@ -1,0 +1,498 @@
+#include<iostream>//对于界符字符字符串判断使用if其他判断用自动机
+#include<string>
+#include<set>
+#include <algorithm>
+#include<fstream>
+#include<map>
+#include<vector>
+#include<stack>
+using namespace std;
+int i;
+int chart[6][256];//状态转移表
+int chart1[256][256];//ll1分析表 
+set<string> keyword={"include","iostream","string","set","int","char","using","namespace",\
+                    "std","math","if","else","elsif","main","void","float","define","const"\
+                    ,"new","do","while","false","true"};//关键词表
+map<int,string> haha;
+map<string,char> haha1;
+set<char> VN={'E','e','T','t','F'};//状态表
+set<char> VT={'W','w','(',')','i','+','-','*','/'};//字母表
+map<char,set<char>>first; //first集合
+map<char,set<char>>follow; //follo集合
+map<char,set<char>>first_temp;
+map<char,set<char>>follow_temp;
+string input[8];//用z代替空
+void First(){//求first集
+    string temp;
+    int j=0;
+    while(j<8){
+         temp=input[j];
+         j++;
+         int len = temp.length();
+        if(VN.find(temp[5])==VN.end())//若为终结符则直接进入first集
+            first[temp[0]].insert(temp[5]);
+        else//否则  进入first_temp集
+            first_temp[temp[0]].insert(temp[5]);
+    }
+    map<char,set<char>>::iterator it=first_temp.begin();
+    while(first_temp.size()!=0){//将first_temp集中对应字符的first集加入到first集中
+        set<char>::iterator ij=it->second.begin();
+        while(ij!=it->second.end()){
+             if(first.find(*ij)!=first.end()){
+                set<char>::iterator ik=first[*ij].begin();
+                while(ik!=first[*ij].end())
+                      first[it->first].insert(*ik),ik++;
+                it->second.erase(ij++);
+             }
+             else ij++;
+        }
+        if(it->second.size()==0)
+           first_temp.erase(it++);
+        else
+           it++;
+        if(it==first_temp.end())
+           it=first_temp.begin();
+    }
+}
+void Follow(){
+     string temp;
+     int j=0;
+     follow['E'].insert('#');//再开头字符中加入#号
+     while(j<8){
+           temp=input[j];
+           j++;
+           int l=5,len=temp.length();
+           if(temp[5]=='z')//若为空字符则继续
+                continue;
+           while(l<len-1&&temp[l+1]!=' '){
+                 if(VN.find(temp[l])!=VN.end()) {//前一个字符是VN集合当前字符是字符集则进入相应的follow集
+                    if(VN.find(temp[l+1])==VN.end())
+                         follow[temp[l]].insert(temp[l+1]);
+                    else{//否则将该字符的first进入到该字符的follow集
+                         int ok=1;
+                         set<char>::iterator it=first[temp[l+1]].begin();
+                         while(it!=first[temp[l+1]].end()){
+                               if(*it!='z')
+                               follow[temp[l]].insert(*it);
+                               else ok=0;//若该first集中有空字符则将temp[0]放入相应的follow_temp集中
+                               it++;
+                         if(!ok)
+                            follow_temp[temp[l]].insert(temp[0]);
+                        }
+                    }
+
+                }
+            l++;
+          }
+          if(l<len&&(VN.find(temp[l])!=VN.end()))//若该字符无后字符则将temp[0]加入相应的follow_temp集中
+             follow_temp[temp[l]].insert(temp[0]);
+     }
+    map<char,set<char>>::iterator it=follow_temp.begin();//将follow_temp集中相应字符对应的follow加入到follow集中
+    while(follow_temp.size()!=0){
+        set<char>::iterator ij=it->second.begin();
+        while(ij!=it->second.end()){
+             if(follow.find(*ij)!=follow.end()){
+                set<char>::iterator ik=follow[*ij].begin();
+                while(ik!=follow[*ij].end())
+                      follow[it->first].insert(*ik),ik++;
+                it->second.erase(ij++);
+             }
+             else
+                ij++;
+        }
+        if(it->second.size()==0)
+           follow_temp.erase(it++);
+        else
+           it++;
+        if(it==follow_temp.end())
+           it=follow_temp.begin();
+    }
+}
+char state(string strline)//自动机
+{
+    int state1=1,state2=1,kk,j;
+    char nihao='k';
+    string newline="";
+    for(kk=i;kk<strline.size();kk++)
+    {
+        state2=state1;
+        state1=chart[state1][strline[kk]];//状态转移
+        if(state1==0)
+            break;
+        newline+=strline[kk];
+    }
+    i=kk-1;
+    switch(state2)//查看最终态
+    {
+        case 2://为2时是标识符
+        {
+            if(keyword.find(newline)==keyword.end())//是否在关键字表中
+            {
+                nihao='i';
+                return nihao;
+            }
+            else//在关键字表中
+            {
+                cout<<"常数不能为关键字";
+            }
+            return nihao;
+            break;
+        }
+        case 3://最终态为3状态
+        {
+            nihao='i';
+            return nihao;
+            break;
+        }
+        case 5://最终态为5状态
+        {
+            nihao='i';
+            return nihao;
+            break;
+        }
+        default://其余态报错
+        {
+            cout<<"该标识符违法";
+            return nihao;
+        }
+    }
+    return nihao;
+    
+}
+void chushihua()//对分析表和状态转移表初始化
+{
+    for(int i=0;i<256;i++)
+        for(int j=0;j<256;j++)
+            chart1[i][j]=0;
+    input[0]="E -> Te" ;//给出文法
+    input[1]="e -> WTe ";
+    input[3]="T -> Ft";
+    input[4]="t -> wFt ";
+    input[6]="F -> i ";
+    input[2]="e -> z";
+    input[5]="t -> z";
+    input[7]="F -> (E)";
+    string string1="Te",string2="WTe",string3="",string4="Ft",string5="wFt",string6="",string7="i",string8="(E)",string9="@1",string10="@2";
+    haha[1]=string1;//构造文法对应关系
+    haha[2]=string2;
+    haha[3]=string3;
+    haha[4]=string4;
+    haha[5]=string5;
+    haha[6]=string6;
+    haha[7]=string7;
+    haha[8]=string8;
+    First();
+    Follow();
+}
+void show_first(){ //打印FIRST集合
+     cout<<"FIRST："<<endl;
+     map<char,set<char>>::iterator it=first.begin();
+     while(it!=first.end()){
+           cout<<"FIRST"<<"("<<it->first<<")"<<"={ ";
+           set<char>::iterator ij=it->second.begin();
+           int l=0,len=it->second.size();
+           while(ij!=it->second.end()){
+            cout<<*ij;ij++;
+            if(l<=len-2)
+               cout<<" , ";
+            l++;
+        }
+        it++;
+        cout<<" }"<<endl;
+    }
+}
+void show_follow(){ //打印FOLLOW集合
+     cout<<"FOLLOW："<<endl;
+     map<char,set<char>>::iterator it=follow.begin();
+     while(it!=follow.end()){
+          cout<<"FOLLOW"<<"("<<it->first<<")"<<"={ ";
+          set<char>::iterator ij=it->second.begin();
+          int l=0,len=it->second.size();
+          while(ij!=it->second.end()){
+                cout<<*ij;ij++;
+                if(l<=len-2)
+                   cout<<" , ";
+                l++;
+          }
+        it++;
+        cout<<" }"<<endl;
+    }
+}
+void ll1()
+{
+    string temp;
+    for(int j=0;j<8;j++)
+    {
+        temp=input[j];
+        if(temp[5]=='z')
+        {
+            set<char>::iterator ij=follow[temp[0]].begin();
+            while(ij!=follow[temp[0]].end())
+            {
+                char ss=*ij;
+                chart1[temp[0]][ss]=j+1;
+                ij++;
+            }
+        }
+        else
+        {
+            if(VT.find(temp[5])!=VT.end())
+                chart1[temp[0]][temp[5]]=j+1;
+            else
+            {
+                int ok=1;
+                set<char>::iterator ij=first[temp[5]].begin();
+                while(ij!=first[temp[5]].end())
+                {
+                    char ss=*ij;
+                    if(ss=='z')
+                    {
+                        ok=0;
+                        break;
+                    }
+                    chart1[temp[0]][ss]=j+1;
+                    ij++;
+                }
+                if(!ok)
+                {
+                    set<char>::iterator ij=follow[temp[0]].begin();
+                    while(ij!=follow[temp[0]].end())
+                    {
+                        char ss=*ij;
+                        chart1[temp[0]][ss]=j+1;
+                        ij++;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}
+int main()
+{
+    chushihua();//对分析表和状态转移表初始化
+    ll1();
+    cout<<"文法："<<endl;
+    for(int jh=0;jh<8;jh++)
+    {
+        cout<<input[jh]<<endl;
+    }
+    show_first();
+    show_follow();
+    cout<<"正确或错误：";
+    for(int hh=0;hh<6;hh++)//状态转移方程初始化
+    {
+        for(int kk=0;kk<256;kk++)
+            chart[hh][kk]=0;
+    }
+    for(int hh=65;hh<=90;hh++)
+    {
+        chart[1][hh]=2;
+        chart[2][hh]=2;
+    }
+    for(int hh=97;hh<=122;hh++)
+    {
+        chart[1][hh]=2;
+        chart[2][hh]=2;
+    }
+    for(int hh=48;hh<=57;hh++)
+    {
+        chart[1][hh]=3;
+        chart[3][hh]=3;
+        chart[4][hh]=5;
+        chart[5][hh]=5;
+    }
+    chart[3][46]=4;
+    string strline;
+    // cin>>strline;
+    strline="((Bb)+(5*3))";
+    strline=strline+'#';
+    char nowa,nowb;//下一个,栈顶
+    int j;
+    string stackstring;//存储当前推导式
+    stack<char> now;
+    now.push('#');
+    now.push('E');//初始化栈
+    for(i=0;i<strline.size();i++)
+    {
+        nowa=strline[i];
+        if(nowa=='#')
+        {
+
+        }
+        else if(VT.find(nowa)==VT.end())////对常数和数字进行处理
+        {
+            nowa=state(strline);
+        }
+        else
+        {
+            if(nowa=='+'||nowa=='-')//对一些符号进行处理
+                nowa='W';
+            else if(nowa=='*'||nowa=='/')
+                nowa='w';
+        }      
+        L1:nowb=now.top();
+        now.pop();//获取栈顶元素
+        if(VT.find(nowb)!=VT.end())//如过栈定元素为字母表元素
+        {
+            if(nowa==nowb)//相等则消去
+                continue;
+            else//不相等报错
+            {
+                cout<<"WRONG";
+                system("pause");
+                return 0;
+            }
+        }
+        else if(VN.find(nowb)!=VN.end())//当栈顶元素为状态时
+        {
+            if(nowa=='W')//当前字符为+，-时
+            {
+                j=chart1[nowb]['W'];//查分析表
+                if(j==0)//为空时报错
+                {
+                    cout<<"WRONG";
+                    system("pause");
+                    return 0;
+                }
+                else//将表达式逆序压栈
+                {
+                    stackstring=haha[j];
+                    for(int jj=stackstring.size()-1;jj>=0;jj--)
+                    {
+                        now.push(stackstring[jj]);
+                    }
+                    goto L1;
+                }
+            }
+            else if(nowa=='w')//当前字符为*，/时
+            {
+                j=chart1[nowb]['w'];//查分析表
+                if(j==0)//为空时报错
+                {
+                    cout<<"WRONG";
+                    system("pause");
+                    return 0;
+                }
+                else//将表达式逆序压栈
+                {
+                    stackstring=haha[j];
+                    for(int jj=stackstring.size()-1;jj>=0;jj--)
+                    {
+                        now.push(stackstring[jj]);
+                    }
+                    goto L1;
+                }
+            }
+            else if(nowa=='(')//当前字符为（时
+            {
+                j=chart1[nowb]['('];//查分析表
+                if(j==0)//为空时报错
+                {
+                    cout<<"WRONG";
+                    system("pause");
+                    return 0;
+                }
+                else//将表达式逆序压栈
+                {
+                    stackstring=haha[j];
+                    for(int jj=stackstring.size()-1;jj>=0;jj--)
+                    {
+                        now.push(stackstring[jj]);
+                    }
+                    goto L1;
+                }
+            }
+            else if(nowa==')')//当前字符为）时
+            {
+                j=chart1[nowb][')'];//查分析表
+                if(j==0)//为空时报错
+                {
+                    cout<<"WRONG";
+                    system("pause");
+                    return 0;
+                }
+                else//将表达式逆序压栈
+                {
+                    stackstring=haha[j];
+                    for(int jj=stackstring.size()-1;jj>=0;jj--)
+                    {
+                        now.push(stackstring[jj]);
+                    }
+                    goto L1;
+                }
+            }
+            else if(nowa=='#')//当前字符为#时
+            {
+                j=chart1[nowb]['#'];//查分析表
+                if(j==0)//为空时报错
+                {
+                    cout<<"WRONG";
+                    system("pause");
+                    return 0;
+                }
+                else//将表达式逆序压栈
+                {
+                    stackstring=haha[j];
+                    for(int jj=stackstring.size()-1;jj>=0;jj--)
+                    {
+                        now.push(stackstring[jj]);
+                    }
+                    goto L1;
+                }
+            }
+            else
+            {
+                if(nowa=='k')//不是常数或数字时报错
+                {
+                    cout<<"WRONG";
+                    system("pause");
+                    return 0;
+                }
+                else//是常数或数字
+                {
+                    j=chart1[nowb][nowa];//查分析表
+                    if(j==0)//为空时报错
+                    {
+                        cout<<"WRONG";
+                        system("pause");
+                        return 0;
+                    }
+                    else//将表达式逆序压栈
+                    {
+                        stackstring=haha[j];
+                        for(int jj=stackstring.size()-1;jj>=0;jj--)
+                        {
+                            now.push(stackstring[jj]);
+                        }
+                        goto L1;
+                    }
+                }               
+            }
+        }
+        else if(nowb=='#')//当栈顶元素为#时
+        {
+            if(nowa=='#')//若当前字符为#则正确
+            {
+                cout<<"RIGHT";
+                system("pause");
+                return 0;
+            }
+            else//若不是#则报错
+            {
+                cout<<"WRONG";
+                system("pause");
+                return 0;
+            }
+            
+        }
+        else//其他报错
+        {
+            cout<<"WRONG";
+            return 0;
+        }
+    }
+    system("pause");
+    return 0;
+}

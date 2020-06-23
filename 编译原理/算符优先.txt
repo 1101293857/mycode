@@ -1,0 +1,489 @@
+#include<iostream>//对于界符字符字符串判断使用if其他判断用自动机
+#include<string>
+#include<set>
+#include <algorithm>
+#include<fstream>
+#include<map>
+#include<vector>
+#include<stack>
+using namespace std;
+int i;
+set<char>  VN={'W','w','(',')','i'};//终结符集
+char chart[256][256];//算符优先关系矩阵
+int chart1[6][256];//转移方程
+set<string> keyword={"include","iostream","string","set","int","char","using","namespace",\
+                    "std","math","if","else","elsif","main","void","float","define","const"\
+                    ,"new","do","while","false","true","begin","end"};//关键词表
+set<char> VT={'W','w','(',')','i','+','-','*','/'};//字母表
+char first[3][10],last[3][10];//firstvt集和lastvt集
+map<string,char> change;
+string st[3];
+int fflag[10] = { 0 };                //标志第i个非终结符的FIRSTVT集是否已求出
+int lflag[10] = { 0 };                //标志第i个非终结符的LASTVT集是否已求出
+void firstvt(char c)                                       //求FIRSTVT集
+{
+	int i, j, k, m, n;
+	for (i = 0; i<3; i++)
+	{
+		if (st[i][0] == c)
+			break;
+	}
+	if (fflag[i] == 0)
+	{
+		n = first[i][0] + 1;
+		m = 0;
+		do
+		{
+			if (m == 2 || st[i][m] == '|')
+			{
+				if (VN.find(st[i][m + 1])!=VN.end())//判断是否为终结符
+				{
+					first[i][n] = st[i][m + 1];
+					n++;
+				}
+				else
+				{
+					if (VN.find(st[i][m + 2])!=VN.end())
+					{
+						first[i][n] = st[i][m + 2];
+						n++;
+					}
+					if (st[i][m + 1] != c)//若该字符不与前面出现字符相等  递归求其firstvt集
+					{
+						firstvt(st[i][m + 1]);
+						for (j = 0; j<3; j++)
+						{
+							if (st[j][0] == st[i][m + 1])
+								break;
+						}
+						for (k = 0; k<first[j][0]; k++)
+						{
+							int t;
+							for (t = 0; t<n; t++)
+							{
+								if (first[i][t] == first[j][k + 1])
+									break;
+							}
+							if (t == n)
+							{
+								first[i][n] = first[j][k + 1];
+								n++;
+							}
+						}
+					}
+				}
+			}
+			m++;
+		} while (st[i][m] != '#');
+		first[i][n] = '#';
+		first[i][0] = --n;//第一位值存firstvt集中元素的个数（字符形式）
+		fflag[i] = 1;//表明该非终极符的firstvt集求出来了
+	}
+}
+void lastvt(char c)                                        //求LASTVT集
+{
+	int i, j, k, m, n;
+	for (i = 0; i<3; i++)
+	{
+		if (st[i][0] == c)
+			break;
+	}
+	if (lflag[i] == 0)
+	{
+		n = last[i][0] + 1;
+		m = 0;
+		do
+		{
+			if (st[i][m + 1] == '#' || st[i][m + 1] == '|')//判断是否为终结符
+			{
+				if (VN.find(st[i][m])!=VN.end())
+				{
+					last[i][n] = st[i][m];
+					n++;
+				}
+				else
+				{
+					if (VN.find(st[i][m - 1])!=VN.end())
+					{
+						last[i][n] = st[i][m - 1];
+						n++;
+					}
+					if (st[i][m] != c)//若该字符不与前面出现字符相等  递归求其lastvt集
+					{
+						lastvt(st[i][m]);
+						for (j = 0; j<3; j++)
+						{
+							if (st[j][0] == st[i][m])
+								break;
+						}
+						for (k = 0; k<last[j][0]; k++)
+						{
+							int t;
+							for (t = 0; t<n; t++)
+							{
+								if (last[i][t] == last[j][k + 1])
+									break;
+							}
+							if (t == n)
+							{
+								last[i][n] = last[j][k + 1];
+								n++;
+							}
+						}
+					}
+				}
+			}
+			m++;
+		} while (st[i][m] != '#');
+		last[i][n] = '#';
+		last[i][0] = --n;
+		lflag[i] = 1;
+	}
+}
+char state(string strline)//自动机
+{
+    int state1=1,state2=1,kk,j;
+    char nihao='k';
+    string newline="";
+    for(kk=i;kk<strline.size();kk++)
+    {
+        state2=state1;
+        state1=chart1[state1][strline[kk]];//状态转移
+        if(state1==0)
+            break;
+        newline+=strline[kk];
+    }
+    i=kk-1;
+    switch(state2)//查看最终态
+    {
+        case 2://为2时是标识符
+        {
+            if(keyword.find(newline)==keyword.end())//是否在关键字表中
+            {
+                nihao='i';
+                return nihao;
+            }
+            else//在关键字表中
+            {
+                cout<<"常数不能为关键字";
+                return nihao;
+            }
+            break;
+        }
+        case 3://最终态为3状态
+        {
+            nihao='i';
+            return nihao;
+            break;
+        }
+        case 5://最终态为5状态
+        {
+            nihao='i';
+            return nihao;
+            break;
+        }
+        default://其余态报错
+        {
+            cout<<"该标识符违法";
+            return nihao;
+        }
+    }
+    return nihao;
+    
+}
+void chushihua()//初始化算符优先关系矩阵
+{
+	for(int hh=0;hh<6;hh++)//状态转移方程初始化
+    {
+        for(int kk=0;kk<256;kk++)
+            chart1[hh][kk]=0;
+    }
+    for(int hh=65;hh<=90;hh++)
+    {
+        chart1[1][hh]=2;
+        chart1[2][hh]=2;
+    }
+    for(int hh=97;hh<=122;hh++)
+    {
+        chart1[1][hh]=2;
+        chart1[2][hh]=2;
+    }
+    for(int hh=48;hh<=57;hh++)
+    {
+        chart1[1][hh]=3;
+        chart1[3][hh]=3;
+        chart1[4][hh]=5;
+        chart1[5][hh]=5;
+    }
+    chart1[3][46]=4;
+    int kk,mm;
+    for(int i=0;i<256;i++)
+    {
+        for(int j=0;j<256;j++)
+        {
+            chart[i][j]='0';
+        }
+    }
+    st[0]="E->T|EWT#";//文法
+    st[1]="T->F|TwF#";
+    st[2]="F->i|(E)#";
+	string string1="EWE",string2="EwE",string3=")E(",string4="i";
+	change[string1]='E';
+	change[string2]='E';
+	change[string3]='E';
+	change[string4]='E';
+    cout<<"输出文法"<<endl;
+    for(int kkk=0;kkk<3;kkk++)
+    {
+        for(int kkk1=0;kkk1<st[kkk].size();kkk1++)
+        {
+            if(st[kkk][kkk1]=='#')
+            {
+                cout<<endl;
+                break;
+            }
+            else
+            {
+                cout<<st[kkk][kkk1];
+            }        
+        }
+    }
+    firstvt('E');//求first集
+    lastvt('E');//求last集
+    for(int jj=0;jj<3;jj++)//求优先关系矩阵
+    {
+        char ss=st[jj][0];
+        for(int kk1=0;kk1<3;kk1++)
+        {
+            for(int mm1=5;mm1<=7;mm1++)
+            {
+                if(st[kk1][mm1]==ss)
+                {
+                    switch(ss)
+                    {
+                        case 'E':
+                        {
+                            if(VN.find(st[kk1][mm1+1])!=VN.end())
+                            {
+                                
+                                for(int hh1=1;;hh1++)
+                                {
+                                    if(last[0][hh1]=='#')
+                                        break;
+                                    else
+                                    {
+                                        chart[last[0][hh1]][st[kk1][mm1+1]]='>';
+                                    }
+                                    
+                                }
+                            }
+                            if(VN.find(st[kk1][mm1-1])!=VN.end())
+                            {
+                                for(int hh1=1;;hh1++)
+                                {
+                                    if(first[0][hh1]=='#')
+                                        break;
+                                    else
+                                    {
+                                        chart[st[kk1][mm1-1]][first[0][hh1]]='<';
+                                    }                               
+                                }
+                            }
+                            break;
+                        }
+                        case 'T':
+                        {
+                            if(VN.find(st[kk1][mm1+1])!=VN.end())
+                            {
+                                
+                                for(int hh1=1;;hh1++)
+                                {
+                                    if(last[1][hh1]=='#')
+                                        break;
+                                    else
+                                    {
+                                        chart[last[1][hh1]][st[kk1][mm1+1]]='>';
+                                    }
+                                    
+                                }
+                            }
+                            if(VN.find(st[kk1][mm1-1])!=VN.end())
+                            {
+                                for(int hh1=1;;hh1++)
+                                {
+                                    if(first[1][hh1]=='#')
+                                        break;
+                                    else
+                                    {
+                                        chart[st[kk1][mm1-1]][first[1][hh1]]='<';
+                                    }                               
+                                }
+                            }
+                            break;
+                        }
+                        case 'F':
+                        {
+                            if(VN.find(st[kk1][mm1+1])!=VN.end())
+                            {
+                                
+                                for(int hh1=1;;hh1++)
+                                {
+                                    if(last[2][hh1]=='#')
+                                        break;
+                                    else
+                                    {
+                                        chart[last[2][hh1]][st[kk1][mm1+1]]='>';
+                                    }
+                                    
+                                }
+                            }
+                            if(VN.find(st[kk1][mm1-1])!=VN.end())
+                            {
+                                for(int hh1=1;;hh1++)
+                                {
+                                    if(first[2][hh1]=='#')
+                                        break;
+                                    else
+                                    {
+                                        chart[st[kk1][mm1-1]][first[2][hh1]]='<';
+                                    }                               
+                                }
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    chart['('][')']='=';
+    chart['#']['W']='<';//#号单独处理
+    chart['#']['w']='<';
+    chart['#']['i']='<';
+    chart['#']['(']='<';
+    chart['W']['#']='>';
+    chart['w']['#']='>';
+    chart[')']['#']='>';
+    chart['i']['#']='>';
+	
+    
+}
+bool istrue(string ss)
+{
+	if(ss=="EWE"||ss=="EwE"||ss=="i"||ss==")E(")
+		return true;
+	else
+	{
+		return false;
+	}
+	
+}
+char select(string strline)
+{
+   char nowa;
+   if(strline[i]=='+'||strline[i]=='-')//判断是否为+或-号
+        {
+            nowa='W';
+        }
+        else if(strline[i]=='*'||strline[i]=='/')//判断是否为*或/号
+        {
+            nowa='w';
+        }
+        else if(strline[i]=='(')//判断是否为（
+        {
+            nowa='(';
+        }
+        else if(strline[i]==')')//判断是否为）
+        {
+            nowa=')';
+        }
+        else if(strline[i]=='#')//判断是否为）
+        {
+            nowa='#';
+        }
+        else //其他
+        {
+            nowa=state(strline);
+        }
+        return nowa;
+}
+int main()
+{
+   chushihua();
+   char nowa,nowb,nowc;//当前字符，栈顶字符，两者关系
+   string strline,strline1;
+   cout<<"要判断的表达式：";
+   strline="((Aa+aa)+(5*3)";
+   cout<<strline<<endl;
+   cout<<"结果:";
+   strline+='#';//以#结尾
+   stack<char> now;//用栈来存储
+   now.push('#');
+   for(i=0;i<strline.size();i++)
+   {
+      nowa=select(strline);
+      if(nowa=='k')//若不是常数则报错
+      {
+         cout<<"WRONG";
+         system("pause");
+         return 0;
+      }
+      l1:nowb=now.top();//获取栈定元素
+		char nowd;
+		if(VT.find(nowb)==VT.end()&&nowb!='#')//若栈顶元素不是字母表中的元素时去下一个元素
+		{
+			nowd=nowb;
+			now.pop();
+			nowb=now.top();
+			now.push(nowd);
+		}
+		if(VT.find(nowb)==VT.end()&&nowb!='#')
+		{
+			cout<<"WRONG";
+			system("pause");
+			return 0;
+
+		}
+        nowc=chart[nowb][nowa];//获取两者关系
+        if(nowa=='#'&&nowb=='#')//两者都为#则正确
+        {
+            cout<<"RIGHT";
+            system("pause");
+            return 0;
+        }
+        if(nowc=='<'||nowc=='=')//若为<或=则压栈
+        {
+            now.push(nowa);
+        }
+        else if(nowc=='>')//若为>则将最先出现'<'之后的出栈
+        {
+            strline1="";
+            while(!istrue(strline1))
+            {
+               char s1=now.top();
+               strline1+=s1;
+               if(s1=='#')
+               {
+                  cout<<"WRONG";
+                  system("pause");
+                  return 0;
+               }
+               now.pop();
+            }
+            char s2;
+            s2=change[strline1];
+			   now.push(s2);
+            goto l1;//回到l1
+        }
+        else//其他报错
+        {
+            cout<<"WRONG";
+            system("pause");
+            return 0;
+        }
+    }
+    system("pause");
+    return 0;
+
+}
