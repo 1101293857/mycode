@@ -1,0 +1,121 @@
+import tensorflow as tf
+import cv2
+import numpy as np
+import os
+dict={}
+num=0
+nihao=""
+buhao=""
+path="F:/BaiduNetdiskDownload/2020AIdata/exam.txt"
+file_dir="F:/BaiduNetdiskDownload/2020AIdata/tmp3/"
+with open(path,'r') as f:
+    list1=f.readlines()
+    for i in list1:
+        for j in i:
+            if(j=='\'' or j==' '):
+                continue
+            elif(j==':'):
+                num=1
+            elif(j==','):
+                num=0
+                dict[nihao]=int(buhao)
+                nihao=""
+                buhao=""
+            elif(num==0):
+                nihao=nihao+j
+            else:
+                buhao=buhao+j
+def resize_image(img):
+    # 补方
+    pad_size = abs(img.shape[0] - img.shape[1]) // 2
+    if img.shape[0] < img.shape[1]:
+        pad_dims = ((pad_size, pad_size), (0, 0))
+    else:
+        pad_dims = ((0, 0), (pad_size, pad_size))
+    img = np.lib.pad(img, pad_dims, mode='constant', constant_values=255)
+    # 缩放
+    img = cv2.resize(img, (64 - 4 * 2, 64 - 4 * 2))
+    img = np.lib.pad(img, ((4, 4), (4, 4)), mode='constant', constant_values=255)
+    assert img.shape == (64, 64)
+    total=0
+    for i in range(4,img.shape[0]-4):
+        for j in range(4,img.shape[1]-4):
+            total=total+img[i][j]
+    #算出平均值
+    total=total/(img.shape[0]*img.shape[1])
+    for i in range(0,img.shape[0]):
+        for j in range(0,img.shape[1]):
+            if img[i][j]<total:
+                img[i][j]=-1
+            else:
+                img[i][j]=1
+    #小于该值变为黑色 大于该值变为红色
+    img = img.flatten()
+    # 像素值范围-1到1
+    return img
+def get_file(file_dir):
+    A=[]
+    total=0
+    HHH=0
+    for file in os.listdir(file_dir):
+        A.append(file_dir+file)
+    img=[]
+    label=[]
+    for files in A:
+        for tem in os.listdir(files):
+            total=total+1
+            print(total)
+            name=files.split(sep='/')
+
+            filename=files+'/'+tem
+            print(filename)
+            image11 = cv2.imdecode(np.fromfile(filename, dtype=np.uint8), -1)
+            img_gray = cv2.cvtColor(image11, cv2.COLOR_RGB2GRAY)
+            imhhh = resize_image(img_gray)
+            img.append(imhhh)
+            label.append(dict[name[4]])
+    return img,label,total
+def right(nihao,total,real):
+    now=0
+    text=[]
+    s=' '
+    for i in range(len(nihao)):
+        buhao=nihao[i]
+        min=-100000
+        num=0
+        j=0
+        for d in buhao:
+            if(d>min):
+                min=d
+                num=j
+            j=j+1
+        text.append(num)
+    for i in range(total):
+        if(text[i]==real[i]):
+            now=now+1
+        print(text[i],end="")
+        print(s,end="")
+        print(real[i])
+    return now/total
+def data(img):
+    img1=[]
+    for i in img:
+        image11 = cv2.imdecode(np.fromfile(i, dtype=np.uint8), -1)
+        img_gray = cv2.cvtColor(image11, cv2.COLOR_RGB2GRAY)
+        imhhh = resize_image(img_gray)
+        img1.append(imhhh)
+    return img1
+sess=tf.Session()
+img,label,total=get_file(file_dir)
+label1=np.array(np.zeros((total,3755)))
+label1=label1.reshape(total,3755)
+saver = tf.train.import_meta_graph('my_net1/my_test_model-15.meta')
+saver.restore(sess,tf.train.latest_checkpoint('my_net1/'))
+graph = tf.get_default_graph()
+x = graph.get_tensor_by_name("x:0")
+y = graph.get_tensor_by_name("y:0")
+prob=graph.get_tensor_by_name("prob:0")
+feed_dict ={x:img,y:label1,prob:0.5}
+out=graph.get_tensor_by_name("out:0")
+nihao=sess.run(out,feed_dict)
+print(right(nihao,total,label))
