@@ -1,0 +1,219 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+    <title>登录</title>
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="../css/index.css?v=3" type="text/css">
+    <link rel="stylesheet" href="answerQuestionCss/login.css">
+</head>
+<body id="body1" class="fp-viewing">
+    <div class="fullpage-wrapper">
+        <div class="fullpage-main"></div>
+        <div id="divSojump" class="validate-box">
+            <fieldset class="validate-wrapper" style="padding: 0 50px;">
+                <h1 id="hlogintxt" class="validate-caption">登录</h1>
+                <ul>
+                    <li>
+                        <label for="UserName" class="icon user-icon"></label>
+                        <input name="UserName" id="UserName" placeholder="请输入用户名" class="validate-input user-name" type="text">
+                        <input type="hidden" name="hfUserName" id="hfUserName">
+                        <div class="divclear"></div>
+                    </li>
+                    <li>
+                        <label for="password" class="icon password-icon"></label>
+                        <input name="Password" type="password" id="Password" placeholder="请输入登录密码" class="validate-input">
+
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset style="text-align: center; margin-top: 20px; padding: 0 50px;">
+                <input  type="button"   id="Btn"  value="人脸登录" onClick="change()"  style="width: 30% ;height: 46px ;font-size: 20px ;border-radius: 100px ;background-color: #fa911e;border: none ; cursor: pointer;" ></input>
+                <button id="capture1" style="width: 30% ;height: 46px ;font-size: 20px ;border-radius: 100px ;background-color: #fa911e;border: none ; cursor: pointer;" onclick="window.location.href = 'people.html'">人工客服</button>
+            </fieldset>
+            <fieldset style="text-align: center; margin-top: 20px; padding: 0 50px;">
+                <button name="LoginButton" id="LoginButton" class="submitbutton" onclick="login()" onmouseover="this.className='submitbutton submitbutton_hover';" onmouseout="this.className='submitbutton';" style="color:White; ">登 录</button>
+                <button id="capture" style="width: 100% ;height: 46px ;font-size: 20px ;border-radius: 100px ;background-color: #fa911e;border: none ; cursor: pointer;display: none">人脸登陆</button>
+                <video id="video" style="width: 200px; height: 200px; position: relative;display: none">
+                </video>
+                <span style="color: red; line-height: 28px;"></span>
+            </fieldset>
+        </div>
+<!--        <div style="width: 600px; position: relative;">-->
+<!--        <div>-->
+<!--            <button id="capture" >拍照</button>-->
+
+<!--            <video id="video" style="width: 600px; position: relative;">-->
+<!--            </video>-->
+<!--        </div>-->
+        <div id="html" style="position: absolute; top: 30px; right: 50px;">
+        </div>
+        <div style="display: block; position: relative;" id="none">
+            <view  style="width:0px;height:0px; overflow:hidden">
+                <canvas id="canvas" width="480" height="320" >
+                </canvas>
+            </view>
+            <button id="lookModel">模型混合现实</button>
+        </div>
+    </div>
+    <script src="../plugins/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="../js/zhezhao.js?v=3" type="text/javascript"></script>
+    <script src="../plugins/layer/layer.js"></script>
+    <script src="../plugins/cookie/jquery.cookie.js"></script>
+    <script src="../common/common.js"></script>
+    <script src="answerQuestionJs/login.js"></script>
+    <script>
+        document.getElementById('lookModel').onclick = function (ev) {
+            location.href = './gltf.html'
+        }
+        function  change(){
+            var nihao=$("#Btn").val();
+            if(nihao=="人脸登录"){
+                document.getElementById("LoginButton").style.display="none";
+                document.getElementById("capture").style.display="block";
+                document.getElementById("video").style.display="block";
+                $("#Btn").val("密码登录");
+            }else{
+                document.getElementById("LoginButton").style.display="block";
+                document.getElementById("capture").style.display="none";
+                document.getElementById("video").style.display="none";
+                $("#Btn").val("人脸登录");
+            }
+        }
+        function  change1(){
+            document.getElementById("Btn").style.display="block";
+            document.getElementById("LoginButton").style.display="block";
+            document.getElementById("Btn1").style.display="none";
+            document.getElementById("capture").style.display="none";
+            document.getElementById("video").style.display="none";
+        }
+        //访问用户媒体设备的兼容方法
+        function getUserMedia(constraints, success, error) {
+            if (navigator.mediaDevices.getUserMedia) {
+                //最新的标准API
+                navigator.mediaDevices.getUserMedia(constraints).then(success).catch(error);
+            } else if (navigator.webkitGetUserMedia) {
+                //webkit核心浏览器
+                navigator.webkitGetUserMedia(constraints, success, error)
+            } else if (navigator.mozGetUserMedia) {
+                //firfox浏览器
+                navigator.mozGetUserMedia(constraints, success, error);
+            } else if (navigator.getUserMedia) {
+                //旧版API
+                navigator.getUserMedia(constraints, success, error);
+            }
+        }
+
+        let video = document.getElementById('video');
+        let canvas = document.getElementById('canvas');
+        let context = canvas.getContext('2d');
+
+        function success(stream) {
+            //兼容webkit核心浏览器
+            let CompatibleURL = window.URL || window.webkitURL;
+            //将视频流设置为video元素的源
+            console.log(stream);
+
+            //video.src = CompatibleURL.createObjectURL(stream);
+            video.srcObject = stream;
+            video.play();
+        }
+
+        function error(error) {
+            console.log(`访问用户媒体设备失败${error.name}, ${error.message}`);
+        }
+
+        if (navigator.mediaDevices.getUserMedia || navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia) {
+            //调用用户媒体设备, 访问摄像头
+            getUserMedia({video: {width: 480, height: 320}}, success, error);
+        } else {
+            alert('不支持访问用户媒体');
+        }
+
+        document.getElementById('capture').addEventListener('click', function () {
+            context.drawImage(video, 0, 0, 480, 320);
+
+            function convertCanvasToImage(canvas) {
+                var image = new Image();
+                image.src = canvas.toDataURL("image/png");
+                return image;
+            }
+
+            // let imgElement = convertCanvasToImage(canvas);
+            // document.body.appendChild(imgElement)
+            setTimeout(() => {
+                send()
+            }, 300)
+
+        })
+
+        function dataURItoBlob(base64Data) {
+            var byteString;
+            if (base64Data.split(',')[0].indexOf('base64') >= 0)
+                byteString = atob(base64Data.split(',')[1]);
+            else
+                byteString = unescape(base64Data.split(',')[1]);
+            var mimeString = base64Data.split(',')[0].split(':')[1].split(';')[0];
+            var ia = new Uint8Array(byteString.length);
+            for (var i = 0; i < byteString.length; i++) {
+                ia[i] = byteString.charCodeAt(i);
+            }
+            return new Blob([ia], {type: mimeString});
+        };
+
+        //将blob转换为file
+        function blobToFile(theBlob, fileName) {
+            theBlob.lastModifiedDate = new Date();
+            theBlob.name = fileName;
+            return theBlob;
+        };
+
+        function send() {
+            var UserName = document.getElementById("UserName");
+            if (!UserName.value) {
+                alert("请先输入用户名");
+                UserName.focus();
+                return;
+            }
+            //生成图片格式base64包括：jpg、png格式
+            var base64Data = canvas.toDataURL("image/jpeg", 1.0);
+            //封装blob对象
+            var blob = dataURItoBlob(base64Data);
+
+            var file = blobToFile(blob, "imgSignature");
+            var UserNameText = $("#UserName").val();
+            //这里我打算用ajax方式，所以需要使用Formdata形式
+            var data = new FormData();
+            data.append("file", file);
+            data.append("username", UserNameText);
+
+            function ajax() {
+                $.ajax({
+                    url: "/admin/searchPic",
+                    type: "POST",
+                    dataType: "JSON",
+                    data: data,
+                    contentType: false,
+                    processData: false,
+                    success: function (res) {
+                        if (res.code == '666') {
+                            layer.msg("登录成功");
+                            setCookie('isLogin','1');
+                            setCookie('userId',res.data.id);
+                            setCookie('userName',UserNameText);
+                            setCookie('power',res.data.role);
+                            setCookie('modelId',res.data.modelId)
+                            window.location.href = "myQuestionnaires.html"
+                            alert("8");
+                        }else{
+                            layer.msg("登录失败");
+                        }
+                    }
+                });
+            }
+
+            ajax()
+        }
+
+    </script>
+</body>
+</html>

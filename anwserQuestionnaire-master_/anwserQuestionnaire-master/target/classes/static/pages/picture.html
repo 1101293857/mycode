@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>摄像头拍照</title>
+</head>
+<style>
+    body, html {
+        margin: 0;
+        height: 100%;
+    }
+
+    video {
+        width: 100%;
+        display: block;
+    }
+
+    #capture {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        transform: translateY(-50%);
+        z-index: 2;
+        font-weight: bold;
+        font-size: 24px;
+        opacity: 0.3;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    canvas {
+        display: block;
+    }
+
+    #lookModel {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        font-size: 50px;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: solid 0px;
+        opacity: 0.5;
+        transform: translateY(-50%);
+        display: none;
+    }
+</style>
+<body>
+<!--<video id="video"controls>-->
+<div style="width: 600px; position: relative;">
+    <button id="capture" >拍照</button>
+
+    <video id="video" style="width: 600px; position: relative;">
+    </video>
+</div>
+<div id="html" style="position: absolute; top: 30px; right: 50px;">
+</div>
+
+
+<div style="display: block; position: relative;" id="none">
+    <canvas id="canvas" width="480" height="320">
+    </canvas>
+    <button id="lookModel">模型混合现实</button>
+</div>
+
+<script src="../plugins/jQuery/jquery-1.12.4.min.js"></script>
+<script>
+    document.getElementById('lookModel').onclick = function (ev) {
+        location.href = './gltf.html'
+    }
+
+    //访问用户媒体设备的兼容方法
+    function getUserMedia(constraints, success, error) {
+        if (navigator.mediaDevices.getUserMedia) {
+            //最新的标准API
+            navigator.mediaDevices.getUserMedia(constraints).then(success).catch(error);
+        } else if (navigator.webkitGetUserMedia) {
+            //webkit核心浏览器
+            navigator.webkitGetUserMedia(constraints, success, error)
+        } else if (navigator.mozGetUserMedia) {
+            //firfox浏览器
+            navigator.mozGetUserMedia(constraints, success, error);
+        } else if (navigator.getUserMedia) {
+            //旧版API
+            navigator.getUserMedia(constraints, success, error);
+        }
+    }
+
+    let video = document.getElementById('video');
+    let canvas = document.getElementById('canvas');
+    let context = canvas.getContext('2d');
+
+    function success(stream) {
+        //兼容webkit核心浏览器
+        let CompatibleURL = window.URL || window.webkitURL;
+        //将视频流设置为video元素的源
+        console.log(stream);
+
+        //video.src = CompatibleURL.createObjectURL(stream);
+        video.srcObject = stream;
+        video.play();
+    }
+
+    function error(error) {
+        console.log(`访问用户媒体设备失败${error.name}, ${error.message}`);
+    }
+
+    if (navigator.mediaDevices.getUserMedia || navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia) {
+        //调用用户媒体设备, 访问摄像头
+        getUserMedia({video: {width: 480, height: 320}}, success, error);
+    } else {
+        alert('不支持访问用户媒体');
+    }
+
+    document.getElementById('capture').addEventListener('click', function () {
+        context.drawImage(video, 0, 0, 480, 320);
+
+        function convertCanvasToImage(canvas) {
+            var image = new Image();
+            image.src = canvas.toDataURL("image/png");
+            return image;
+        }
+
+        // let imgElement = convertCanvasToImage(canvas);
+        // document.body.appendChild(imgElement)
+        setTimeout(() => {
+            send()
+        }, 300)
+
+    })
+
+    function dataURItoBlob(base64Data) {
+        var byteString;
+        if (base64Data.split(',')[0].indexOf('base64') >= 0)
+            byteString = atob(base64Data.split(',')[1]);
+        else
+            byteString = unescape(base64Data.split(',')[1]);
+        var mimeString = base64Data.split(',')[0].split(':')[1].split(';')[0];
+        var ia = new Uint8Array(byteString.length);
+        for (var i = 0; i < byteString.length; i++) {
+            ia[i] = byteString.charCodeAt(i);
+        }
+        return new Blob([ia], {type: mimeString});
+    };
+
+    //将blob转换为file
+    function blobToFile(theBlob, fileName) {
+        theBlob.lastModifiedDate = new Date();
+        theBlob.name = fileName;
+        return theBlob;
+    };
+
+    function send() {
+        //生成图片格式base64包括：jpg、png格式
+        var base64Data = canvas.toDataURL("image/jpeg", 1.0);
+        //封装blob对象
+        var blob = dataURItoBlob(base64Data);
+
+        var file = blobToFile(blob, "imgSignature");
+        var jj = "ajsgdh";
+        //这里我打算用ajax方式，所以需要使用Formdata形式
+        var data = new FormData();
+        data.append("file", file);
+        data.append("username", jj);
+
+        function ajax() {
+            $.ajax({
+                url: "/admin/searchPic",
+                type: "POST",
+                dataType: "JSON",
+                data: data,
+                contentType: false,
+                processData: false,
+                success: function (res) {
+                    let i = 0
+                    console.log(res);
+                    if (res.result.length == 0) return ajax() // 如果灭有找到重新找再次发请求
+                    if (res.result[0].score > 0.6) {
+                        document.getElementById('lookModel').style.display = 'block'
+                        console.log('111: ', 111)
+                    } else {
+                        document.getElementById('lookModel').style.display = 'none'
+                        console.log('222: ', 222)
+                    }
+                    document.getElementById('none').style.display = "block"
+                    let html = ""
+                    res.result.forEach((val) => {
+                        html += `${++i}  文件名：***${Math.round(Math.random() * 10000)}****<br>相似度：${val.score}<br><br> `
+                    })
+                    $("#html").html(html)
+                }, error(error) {
+                    console.log('error: ', error)
+                }
+            });
+        }
+
+        ajax()
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1110 @@
+2021-06-10 08:51:26.996 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 08:51:26.996 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 08:51:27.026 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 08:51:27.026 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 08:51:27.206 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 08:51:27.206 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 08:51:28.696 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 08:51:28.696 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 08:51:28.696 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 08:51:28.696 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 08:51:29.055 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 08:51:29.055 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 08:51:40.306 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 08:51:40.306 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 08:51:40.306 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: yyyyyyyyyy(String)
+2021-06-10 08:51:40.306 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: yyyyyyyyyy(String)
+2021-06-10 08:51:40.306 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 08:51:40.306 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 08:51:40.345 [http-nio-8085-exec-1] DEBUG c.a.q.dao.UserEntityMapper.insert -==>  Preparing: insert into user_info (id, username, password, start_time, stop_time, status, created_by, creation_date, last_updated_by, last_update_date) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2021-06-10 08:51:40.345 [http-nio-8085-exec-1] DEBUG c.a.q.dao.UserEntityMapper.insert -==>  Preparing: insert into user_info (id, username, password, start_time, stop_time, status, created_by, creation_date, last_updated_by, last_update_date) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2021-06-10 08:51:40.345 [http-nio-8085-exec-1] DEBUG c.a.q.dao.UserEntityMapper.insert -==> Parameters: 5383955449038998(String), yyyyyyyyyy(String), y(String), 2021-06-10 08:51:31.0(Timestamp), 2021-07-10 08:51:31.0(Timestamp), 0(String), admin(String), 2021-06-10 08:51:40.345(Timestamp), null, null
+2021-06-10 08:51:40.345 [http-nio-8085-exec-1] DEBUG c.a.q.dao.UserEntityMapper.insert -==> Parameters: 5383955449038998(String), yyyyyyyyyy(String), y(String), 2021-06-10 08:51:31.0(Timestamp), 2021-07-10 08:51:31.0(Timestamp), 0(String), admin(String), 2021-06-10 08:51:40.345(Timestamp), null, null
+2021-06-10 08:51:40.675 [http-nio-8085-exec-1] DEBUG c.a.q.dao.UserEntityMapper.insert -<==    Updates: 1
+2021-06-10 08:51:40.675 [http-nio-8085-exec-1] DEBUG c.a.q.dao.UserEntityMapper.insert -<==    Updates: 1
+2021-06-10 09:24:23.274 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:23.274 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:23.319 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: asas(String)
+2021-06-10 09:24:23.319 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: asas(String)
+2021-06-10 09:24:23.341 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:23.341 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:24.271 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:24.271 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:24.273 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: asas(String)
+2021-06-10 09:24:24.273 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: asas(String)
+2021-06-10 09:24:24.274 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:24.274 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:24.437 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:24.437 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:24.438 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: asas(String)
+2021-06-10 09:24:24.438 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: asas(String)
+2021-06-10 09:24:24.439 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:24.439 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:24.581 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:24.581 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:24.581 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: asas(String)
+2021-06-10 09:24:24.581 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: asas(String)
+2021-06-10 09:24:24.582 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:24.582 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:24.765 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:24.765 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:24.766 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: asas(String)
+2021-06-10 09:24:24.766 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: asas(String)
+2021-06-10 09:24:24.766 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:24.766 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:26.414 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:26.414 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:26.415 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: a(String)
+2021-06-10 09:24:26.415 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: a(String)
+2021-06-10 09:24:26.416 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:26.416 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:26.585 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:26.585 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:26.585 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: a(String)
+2021-06-10 09:24:26.585 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: a(String)
+2021-06-10 09:24:26.587 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:26.587 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:26.713 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:26.713 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:26.714 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: a(String)
+2021-06-10 09:24:26.714 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: a(String)
+2021-06-10 09:24:26.714 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:26.714 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:31.654 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:31.654 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:31.656 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 09:24:31.656 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 09:24:31.663 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 09:24:31.663 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 09:24:32.127 [http-nio-8085-exec-5] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 09:24:32.127 [http-nio-8085-exec-5] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 09:24:32.128 [http-nio-8085-exec-5] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 09:24:32.128 [http-nio-8085-exec-5] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 09:24:32.138 [http-nio-8085-exec-5] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 09:24:32.138 [http-nio-8085-exec-5] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 09:24:56.332 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:56.332 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:24:56.337 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: qwertyu(String)
+2021-06-10 09:24:56.337 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: qwertyu(String)
+2021-06-10 09:24:56.338 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:56.338 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:24:56.364 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.insert -==>  Preparing: insert into user_info (id, username, password, start_time, stop_time, status, created_by, creation_date, last_updated_by, last_update_date) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2021-06-10 09:24:56.364 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.insert -==>  Preparing: insert into user_info (id, username, password, start_time, stop_time, status, created_by, creation_date, last_updated_by, last_update_date) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2021-06-10 09:24:56.370 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.insert -==> Parameters: 05747945254788989(String), qwertyu(String), qwer(String), 2021-06-10 09:24:41.0(Timestamp), 2021-07-10 09:24:41.0(Timestamp), 0(String), admin(String), 2021-06-10 09:24:56.363(Timestamp), admin(String), 2021-06-10 09:24:56.363(Timestamp)
+2021-06-10 09:24:56.370 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.insert -==> Parameters: 05747945254788989(String), qwertyu(String), qwer(String), 2021-06-10 09:24:41.0(Timestamp), 2021-07-10 09:24:41.0(Timestamp), 0(String), admin(String), 2021-06-10 09:24:56.363(Timestamp), admin(String), 2021-06-10 09:24:56.363(Timestamp)
+2021-06-10 09:24:56.493 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.insert -<==    Updates: 1
+2021-06-10 09:24:56.493 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.insert -<==    Updates: 1
+2021-06-10 09:25:20.983 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:25:20.983 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:25:20.985 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: 12312(String)
+2021-06-10 09:25:20.985 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: 12312(String)
+2021-06-10 09:25:20.987 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:25:20.987 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:25:20.988 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.insert -==>  Preparing: insert into user_info (id, username, password, start_time, stop_time, status, created_by, creation_date, last_updated_by, last_update_date) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2021-06-10 09:25:20.988 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.insert -==>  Preparing: insert into user_info (id, username, password, start_time, stop_time, status, created_by, creation_date, last_updated_by, last_update_date) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2021-06-10 09:25:20.993 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.insert -==> Parameters: 23990035503879248(String), 12312(String), 12(String), 2021-06-10 09:25:15.0(Timestamp), 2021-07-10 09:25:15.0(Timestamp), 0(String), admin(String), 2021-06-10 09:25:20.988(Timestamp), admin(String), 2021-06-10 09:25:20.988(Timestamp)
+2021-06-10 09:25:20.993 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.insert -==> Parameters: 23990035503879248(String), 12312(String), 12(String), 2021-06-10 09:25:15.0(Timestamp), 2021-07-10 09:25:15.0(Timestamp), 0(String), admin(String), 2021-06-10 09:25:20.988(Timestamp), admin(String), 2021-06-10 09:25:20.988(Timestamp)
+2021-06-10 09:25:21.119 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.insert -<==    Updates: 1
+2021-06-10 09:25:21.119 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.insert -<==    Updates: 1
+2021-06-10 09:26:43.611 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:26:43.611 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: SELECT id,username,password,status FROM user_info WHERE username = ? AND status = "1" 
+2021-06-10 09:26:43.635 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: qwea(String)
+2021-06-10 09:26:43.635 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: qwea(String)
+2021-06-10 09:26:43.648 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:26:43.648 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 0
+2021-06-10 09:26:43.651 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.insert -==>  Preparing: insert into user_info (id, username, password, start_time, stop_time, status, created_by, creation_date, last_updated_by, last_update_date) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2021-06-10 09:26:43.651 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.insert -==>  Preparing: insert into user_info (id, username, password, start_time, stop_time, status, created_by, creation_date, last_updated_by, last_update_date) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2021-06-10 09:26:43.653 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.insert -==> Parameters: 5448595985003373(String), qwea(String), as(String), 2021-06-10 09:26:39.0(Timestamp), 2021-07-10 09:26:39.0(Timestamp), 0(String), admin(String), 2021-06-10 09:26:43.651(Timestamp), admin(String), 2021-06-10 09:26:43.651(Timestamp)
+2021-06-10 09:26:43.653 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.insert -==> Parameters: 5448595985003373(String), qwea(String), as(String), 2021-06-10 09:26:39.0(Timestamp), 2021-07-10 09:26:39.0(Timestamp), 0(String), admin(String), 2021-06-10 09:26:43.651(Timestamp), admin(String), 2021-06-10 09:26:43.651(Timestamp)
+2021-06-10 09:26:43.725 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.insert -<==    Updates: 1
+2021-06-10 09:26:43.725 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.insert -<==    Updates: 1
+2021-06-10 16:26:08.615 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-10 16:26:08.615 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-10 16:26:08.676 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 16:26:08.676 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 16:26:09.165 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 16:26:09.165 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 16:26:09.657 [http-nio-8085-exec-4] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 16:26:09.657 [http-nio-8085-exec-4] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 16:26:09.658 [http-nio-8085-exec-4] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 16:26:09.658 [http-nio-8085-exec-4] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 16:26:09.677 [http-nio-8085-exec-4] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 16:26:09.677 [http-nio-8085-exec-4] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 16:30:13.058 [http-nio-8085-exec-9] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 16:30:13.058 [http-nio-8085-exec-9] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 16:30:13.079 [http-nio-8085-exec-9] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 16:30:13.079 [http-nio-8085-exec-9] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 16:30:13.176 [http-nio-8085-exec-9] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 16:30:13.176 [http-nio-8085-exec-9] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 16:30:16.240 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:16.240 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:16.241 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:16.241 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:16.460 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:16.460 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:23.037 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:23.037 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:23.038 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:23.038 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:23.039 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:23.039 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:40.341 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:40.341 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:40.345 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:40.345 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:40.347 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:40.347 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:40.497 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:40.497 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:40.497 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:40.497 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:40.498 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:40.498 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:43.770 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:43.770 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:43.771 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:43.771 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:43.772 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:43.772 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:43.917 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:43.917 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:43.917 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:43.917 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:43.918 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:43.918 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:44.075 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:44.075 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:44.076 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:44.076 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:44.077 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:44.077 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:44.223 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:44.223 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:44.227 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:44.227 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:44.228 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:44.228 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:44.379 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:44.379 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:44.380 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:44.380 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:44.380 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:44.380 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:46.087 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:46.087 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:46.088 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:46.088 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:46.091 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:46.091 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:46.233 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:46.233 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:46.233 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:46.233 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:46.234 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:46.234 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:46.399 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:46.399 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:46.400 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:46.400 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:46.401 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:46.401 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:46.549 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:46.549 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:46.550 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:46.550 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:46.551 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:46.551 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:46.698 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:46.698 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:46.698 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:46.698 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:46.699 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:46.699 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:46.843 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:46.843 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:46.844 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:46.844 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:46.845 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:46.845 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:47.005 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:47.005 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:47.009 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:47.009 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:47.011 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:47.011 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:47.137 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:47.137 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:47.137 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:47.137 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:47.138 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:47.138 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:47.282 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:47.282 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:47.283 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:47.283 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:47.284 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:47.284 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:47.429 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:47.429 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:30:47.429 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:47.429 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:30:47.430 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:30:47.430 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:46.808 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-10 16:31:46.808 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-10 16:31:46.831 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 16:31:46.831 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 16:31:46.867 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 16:31:46.867 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 16:31:47.400 [http-nio-8085-exec-3] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 16:31:47.400 [http-nio-8085-exec-3] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 16:31:47.401 [http-nio-8085-exec-3] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 16:31:47.401 [http-nio-8085-exec-3] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 16:31:47.427 [http-nio-8085-exec-3] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 16:31:47.427 [http-nio-8085-exec-3] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 16:31:49.501 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:49.501 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:49.506 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:49.506 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:49.508 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:49.508 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:52.360 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:52.360 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:52.362 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:52.362 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:52.363 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:52.363 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:53.282 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:53.282 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:53.284 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:53.284 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:53.288 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:53.288 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:53.431 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:53.431 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:53.433 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:53.433 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:53.434 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:53.434 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:53.594 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:53.594 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:53.594 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:53.594 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:53.596 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:53.596 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:53.757 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:53.757 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:53.757 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:53.757 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:53.758 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:53.758 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:53.878 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:53.878 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:53.878 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:53.878 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:53.879 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:53.879 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:54.012 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:54.012 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:31:54.013 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:54.013 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: null
+2021-06-10 16:31:54.014 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:31:54.014 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 0
+2021-06-10 16:36:10.912 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-10 16:36:10.912 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-10 16:36:10.941 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 16:36:10.941 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 16:36:11.004 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 16:36:11.004 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 16:36:11.527 [http-nio-8085-exec-2] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 16:36:11.527 [http-nio-8085-exec-2] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 16:36:11.528 [http-nio-8085-exec-2] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 16:36:11.528 [http-nio-8085-exec-2] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 16:36:11.613 [http-nio-8085-exec-2] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 16:36:11.613 [http-nio-8085-exec-2] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 16:36:13.306 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:36:13.306 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:36:13.307 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: (String)
+2021-06-10 16:36:13.307 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: (String)
+2021-06-10 16:36:13.337 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 30
+2021-06-10 16:36:13.337 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 30
+2021-06-10 16:36:16.024 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:36:16.024 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:36:16.025 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 16:36:16.025 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 16:36:16.032 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 16:36:16.032 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 16:38:19.392 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:38:19.392 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:38:19.416 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 16:38:19.416 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 16:38:19.464 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 16:38:19.464 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 16:38:22.018 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:38:22.018 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:38:22.023 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:38:22.023 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:38:22.026 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:38:22.026 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:50:59.424 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:50:59.424 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:50:59.454 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:50:59.454 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:50:59.473 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:50:59.473 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:51:01.303 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:51:01.303 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:51:01.305 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:51:01.305 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:51:01.307 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:51:01.307 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:55:03.167 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:55:03.167 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:55:03.188 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:55:03.188 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:55:03.204 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:55:03.204 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:55:07.169 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:55:07.169 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:55:07.170 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:55:07.170 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:55:07.172 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:55:07.172 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:55:14.420 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:55:14.420 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:55:14.421 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:55:14.421 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:55:14.423 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:55:14.423 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:55:14.553 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:55:14.553 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:55:14.553 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:55:14.553 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:55:14.555 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:55:14.555 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:55:14.689 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:55:14.689 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:55:14.689 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:55:14.689 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:55:14.695 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:55:14.695 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:55:14.831 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:55:14.831 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:55:14.832 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:55:14.832 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:55:14.834 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:55:14.834 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:20.589 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:20.589 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:20.613 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:20.613 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:20.632 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:20.632 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:22.074 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:22.074 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:22.076 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:22.076 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:22.078 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:22.078 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:23.196 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:23.196 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:23.197 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:23.197 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:23.199 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:23.199 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:23.343 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:23.343 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:23.344 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:23.344 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:23.346 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:23.346 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:23.475 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:23.475 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:23.475 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:23.475 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:23.477 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:23.477 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:23.608 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:23.608 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:23.609 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:23.609 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:23.611 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:23.611 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:23.743 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:23.743 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:23.744 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:23.744 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:23.745 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:23.745 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:23.893 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:23.893 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:23.893 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:23.893 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:23.894 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:23.894 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:24.028 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:24.028 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:24.028 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:24.028 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:24.030 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:24.030 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:24.166 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:24.166 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:24.169 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:24.169 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:24.172 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:24.172 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:24.324 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:24.324 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:24.325 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:24.325 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:24.326 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:24.326 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:24.463 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:24.463 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:24.463 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:24.463 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:24.465 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:24.465 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:24.597 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:24.597 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:56:24.597 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:24.597 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:56:24.606 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:56:24.606 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:57:47.933 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:57:47.933 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:57:47.952 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:57:47.952 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 16:57:47.970 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:57:47.970 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:57:50.276 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:57:50.276 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:57:50.277 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 16:57:50.277 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 16:57:50.280 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:57:50.280 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:59:19.543 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:59:19.543 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 16:59:19.564 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 16:59:19.564 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 16:59:19.705 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 16:59:19.705 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:19.879 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:19.879 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:19.900 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:19.900 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:19.949 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:19.949 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:23.630 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:23.630 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:23.631 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:23.631 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:23.634 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:23.634 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:25.296 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:25.296 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:25.297 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:25.297 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:25.299 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:25.299 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:26.378 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:26.378 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:26.379 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:26.379 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:26.381 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:26.381 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:26.556 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:26.556 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:26.557 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:26.557 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:26.559 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:26.559 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:26.696 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:26.696 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:26.697 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:26.697 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:26.699 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:26.699 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:26.833 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:26.833 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:26.833 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:26.833 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:26.838 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:26.838 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:26.982 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:26.982 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:26.982 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:26.982 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:26.984 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:26.984 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:27.130 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:27.130 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:27.131 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:27.131 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:27.132 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:27.132 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:27.265 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:27.265 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:27.266 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:27.266 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:27.271 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:27.271 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:27.414 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:27.414 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:00:27.414 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:27.414 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:00:27.416 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:00:27.416 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:02:03.674 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:02:03.674 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:02:03.697 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:02:03.697 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:02:03.717 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:02:03.717 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:29.025 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:29.025 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:29.052 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:29.052 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:29.079 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:29.079 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:30.302 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:30.302 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:30.303 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:30.303 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:30.306 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:30.306 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:31.502 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:31.502 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:31.503 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:31.503 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:31.505 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:31.505 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:31.652 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:31.652 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:31.652 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:31.652 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:31.654 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:31.654 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:31.808 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:31.808 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:31.808 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:31.808 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:31.810 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:31.810 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:31.956 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:31.956 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:31.957 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:31.957 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:31.958 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:31.958 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:32.108 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:32.108 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:32.108 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:32.108 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:32.110 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:32.110 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:32.260 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:32.260 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:32.260 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:32.260 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:32.262 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:32.262 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:32.437 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:32.437 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:32.438 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:32.438 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:32.440 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:32.440 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:32.585 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:32.585 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:32.586 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:32.586 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:32.587 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:32.587 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:32.742 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:32.742 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:32.742 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:32.742 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:32.744 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:32.744 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:32.902 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:32.902 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:32.902 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:32.902 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:32.904 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:32.904 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:33.045 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:33.045 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:33.045 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:33.045 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:33.055 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:33.055 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:33.189 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:33.189 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:33.190 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:33.190 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:33.191 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:33.191 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:33.344 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:33.344 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:05:33.345 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:33.345 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:05:33.347 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:05:33.347 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:07:02.625 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:07:02.625 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:07:02.647 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:07:02.647 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:07:02.673 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:07:02.673 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:07.686 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:07.686 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:07.718 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:07.718 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:07.747 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:07.747 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:09.264 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:09.264 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:09.265 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:09.265 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:09.268 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:09.268 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:11.341 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:11.341 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:11.342 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:11.342 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:11.344 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:11.344 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:11.488 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:11.488 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:11.490 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:11.490 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:11.492 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:11.492 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:11.635 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:11.635 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:11.636 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:11.636 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:11.641 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:11.641 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:11.767 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:11.767 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:11.768 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:11.768 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:11.773 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:11.773 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:11.917 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:11.917 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:11.917 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:11.917 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:11.923 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:11.923 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:54.492 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:54.492 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:10:54.517 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:54.517 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:10:54.543 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:10:54.543 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:11:49.631 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:11:49.631 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:11:49.661 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:11:49.661 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:11:49.680 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:11:49.680 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:51.209 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:51.209 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:51.243 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:51.243 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:51.270 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:51.270 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:54.057 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:54.057 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:54.058 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:54.058 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:54.061 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:54.061 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:55.503 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:55.503 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:55.505 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:55.505 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:55.507 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:55.507 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:55.661 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:55.661 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:55.662 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:55.662 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:55.668 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:55.668 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:55.827 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:55.827 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:55.828 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:55.828 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:55.829 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:55.829 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:55.971 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:55.971 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:55.972 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:55.972 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:55.974 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:55.974 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:56.123 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:56.123 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:56.124 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:56.124 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:56.125 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:56.125 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:56.253 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:56.253 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:56.254 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:56.254 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:56.255 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:56.255 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:56.406 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:56.406 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:12:56.406 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:56.406 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:12:56.408 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:12:56.408 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:13:51.132 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:13:51.132 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:13:51.150 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:13:51.150 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:13:51.167 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:13:51.167 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:38.633 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:38.633 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:38.665 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:38.665 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:38.688 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:38.688 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:39.902 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:39.902 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:39.904 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:39.904 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:39.906 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:39.906 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:40.668 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:40.668 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:40.669 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:40.669 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:40.671 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:40.671 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:40.832 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:40.832 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:40.832 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:40.832 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:40.835 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:40.835 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:41.015 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:41.015 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:41.016 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:41.016 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:41.018 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:41.018 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:41.168 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:41.168 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:41.169 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:41.169 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:41.171 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:41.171 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:41.316 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:41.316 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:41.317 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:41.317 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:41.318 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:41.318 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:41.471 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:41.471 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:41.471 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:41.471 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:41.473 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:41.473 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:41.633 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:41.633 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:41.634 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:41.634 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:41.636 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:41.636 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:41.797 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:41.797 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:41.799 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:41.799 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:41.800 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:41.800 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:41.950 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:41.950 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:41.951 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:41.951 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:41.953 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:41.953 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:42.122 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:42.122 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:42.122 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:42.122 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:42.128 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:42.128 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:42.283 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:42.283 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:42.283 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:42.283 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:42.285 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:42.285 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:42.433 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:42.433 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:42.434 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:42.434 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:42.436 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:42.436 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:42.587 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:42.587 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:42.588 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:42.588 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:42.593 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:42.593 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:42.747 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:42.747 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:42.748 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:42.748 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:42.750 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:42.750 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:42.912 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:42.912 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:42.912 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:42.912 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:42.913 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:42.913 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:43.062 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:43.062 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:43.063 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:43.063 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:43.064 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:43.064 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:43.222 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:43.222 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:15:43.222 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:43.222 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:15:43.228 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:15:43.228 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:16:27.650 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:16:27.650 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:16:27.669 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:16:27.669 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:16:27.685 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:16:27.685 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:17:52.941 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:17:52.941 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:17:52.959 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:17:52.959 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:17:52.974 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:17:52.974 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:18:27.762 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:18:27.762 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:18:27.781 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:18:27.781 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:18:27.796 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:18:27.796 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:19:12.571 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:19:12.571 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:19:12.591 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:19:12.591 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:19:12.633 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:19:12.633 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:19:33.941 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:19:33.941 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:19:33.941 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:19:33.941 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:19:33.944 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:19:33.944 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:21:08.481 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:21:08.481 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:21:08.511 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:21:08.511 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 17:21:08.536 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:21:08.536 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 17:21:47.574 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:21:47.574 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 17:21:47.575 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: (String)
+2021-06-10 17:21:47.575 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: (String)
+2021-06-10 17:21:47.581 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 30
+2021-06-10 17:21:47.581 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 30
+2021-06-10 19:02:44.421 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-10 19:02:44.421 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-10 19:02:44.451 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 19:02:44.451 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 19:02:44.691 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 19:02:44.691 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 19:02:45.851 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 19:02:45.851 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 19:02:45.851 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 19:02:45.851 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 19:02:45.921 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 19:02:45.921 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 19:02:48.168 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:02:48.168 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:02:48.168 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: (String)
+2021-06-10 19:02:48.168 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -==> Parameters: (String)
+2021-06-10 19:02:48.178 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 30
+2021-06-10 19:02:48.178 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.queryUserList -<==      Total: 30
+2021-06-10 19:02:50.994 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:02:50.994 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:02:50.994 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:02:50.994 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:02:51.004 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:02:51.004 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:02:57.099 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:02:57.099 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:02:57.109 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:02:57.109 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:02:57.109 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:02:57.109 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:02:57.277 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:02:57.277 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:02:57.277 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:02:57.277 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:02:57.287 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:02:57.287 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:02:57.427 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:02:57.427 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:02:57.427 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:02:57.427 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:02:57.427 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:02:57.427 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:03:36.584 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:03:36.584 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:03:36.604 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:03:36.604 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:03:36.634 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:03:36.634 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:03:38.904 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:03:38.904 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:03:38.904 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:03:38.904 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:03:38.904 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:03:38.904 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:03:39.436 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:03:39.436 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:03:39.436 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:03:39.436 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:03:39.436 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:03:39.436 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:03:39.564 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:03:39.564 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:03:39.564 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:03:39.564 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:03:39.574 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:03:39.574 [http-nio-8085-exec-6] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:04:03.822 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:04:03.822 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:04:03.841 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:04:03.841 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:04:03.871 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:04:03.871 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:04:54.188 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:04:54.188 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:04:54.208 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:04:54.208 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:04:54.238 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:04:54.238 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:07:19.546 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:07:19.546 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:07:19.597 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:07:19.597 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:07:19.638 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:07:19.638 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:09:04.108 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:09:04.108 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:09:04.128 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:09:04.128 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:09:04.148 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:09:04.148 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:10:54.335 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:10:54.335 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:10:54.365 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:10:54.365 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: a(String)
+2021-06-10 19:10:54.395 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:10:54.395 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 14
+2021-06-10 19:16:37.408 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:16:37.408 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:16:37.428 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 19:16:37.428 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 19:16:37.458 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 19:16:37.458 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 19:21:48.751 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:21:48.751 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:21:48.781 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 19:21:48.781 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 19:21:48.811 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 19:21:48.811 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 19:22:21.609 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:22:21.609 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:22:21.639 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 19:22:21.639 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 19:22:21.649 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 19:22:21.649 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 19:23:47.557 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:23:47.557 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:23:47.577 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 19:23:47.577 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aaa(String)
+2021-06-10 19:23:47.607 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 19:23:47.607 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 19:26:03.555 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-10 19:26:03.555 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-10 19:26:03.555 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 19:26:03.555 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 19:26:03.555 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 19:26:03.555 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 19:26:03.825 [http-nio-8085-exec-2] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 19:26:03.825 [http-nio-8085-exec-2] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 19:26:03.835 [http-nio-8085-exec-2] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 19:26:03.835 [http-nio-8085-exec-2] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 19:26:03.845 [http-nio-8085-exec-2] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 19:26:03.845 [http-nio-8085-exec-2] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 19:26:06.033 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:26:06.033 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 19:26:06.043 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: (String)
+2021-06-10 19:26:06.043 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: (String)
+2021-06-10 19:26:06.043 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 30
+2021-06-10 19:26:06.043 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 30
+2021-06-10 22:25:40.012 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-10 22:25:40.012 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-10 22:25:40.032 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 22:25:40.032 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-10 22:25:40.052 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 22:25:40.052 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-10 22:25:40.422 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 22:25:40.422 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-10 22:25:40.422 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 22:25:40.422 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-10 22:25:40.432 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 22:25:40.432 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-10 22:25:41.961 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 22:25:41.961 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 22:25:41.971 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: (String)
+2021-06-10 22:25:41.971 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -==> Parameters: (String)
+2021-06-10 22:25:41.971 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 30
+2021-06-10 22:25:41.971 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryUserList -<==      Total: 30
+2021-06-10 22:25:54.320 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 22:25:54.320 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 22:25:54.320 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 22:25:54.320 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 22:25:54.320 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 22:25:54.320 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 22:41:29.020 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 22:41:29.020 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 22:41:29.040 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 22:41:29.040 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 22:41:29.050 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 22:41:29.050 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 22:43:48.183 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 22:43:48.183 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 22:43:48.213 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 22:43:48.213 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 22:43:48.233 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 22:43:48.233 [http-nio-8085-exec-10] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 22:48:27.279 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 22:48:27.279 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==>  Preparing: SELECT * FROM user_info WHERE username like concat(concat("%",?),"%") ORDER BY username DESC 
+2021-06-10 22:48:27.299 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 22:48:27.299 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -==> Parameters: aa(String)
+2021-06-10 22:48:27.359 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3
+2021-06-10 22:48:27.359 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryUserList -<==      Total: 3

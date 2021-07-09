@@ -1,0 +1,408 @@
+2021-06-18 09:00:07.450 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==>  Preparing: insert into pic (picture, username) values (?, ?) 
+2021-06-18 09:00:07.450 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==>  Preparing: insert into pic (picture, username) values (?, ?) 
+2021-06-18 09:04:07.476 [http-nio-8085-exec-7] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==>  Preparing: insert into pic (picture, username) values (?, ?) 
+2021-06-18 09:04:07.476 [http-nio-8085-exec-7] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==>  Preparing: insert into pic (picture, username) values (?, ?) 
+2021-06-18 09:04:07.503 [http-nio-8085-exec-7] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==> Parameters: java.io.ByteArrayInputStream@27f029db(ByteArrayInputStream), [object HTMLInputElement](String)
+2021-06-18 09:04:07.503 [http-nio-8085-exec-7] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==> Parameters: java.io.ByteArrayInputStream@27f029db(ByteArrayInputStream), [object HTMLInputElement](String)
+2021-06-18 09:04:07.955 [http-nio-8085-exec-7] DEBUG c.a.q.dao.UserEntityMapper.insertpic -<==    Updates: 1
+2021-06-18 09:04:07.955 [http-nio-8085-exec-7] DEBUG c.a.q.dao.UserEntityMapper.insertpic -<==    Updates: 1
+2021-06-18 09:06:24.859 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==>  Preparing: insert into pic (picture, username) values (?, ?) 
+2021-06-18 09:06:24.859 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==>  Preparing: insert into pic (picture, username) values (?, ?) 
+2021-06-18 09:06:24.888 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==> Parameters: java.io.ByteArrayInputStream@4be25156(ByteArrayInputStream), [object HTMLInputElement](String)
+2021-06-18 09:06:24.888 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==> Parameters: java.io.ByteArrayInputStream@4be25156(ByteArrayInputStream), [object HTMLInputElement](String)
+2021-06-18 09:06:24.991 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -<==    Updates: 1
+2021-06-18 09:06:24.991 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -<==    Updates: 1
+2021-06-18 09:08:24.905 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==>  Preparing: insert into pic (picture, username) values (?, ?) 
+2021-06-18 09:08:24.905 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==>  Preparing: insert into pic (picture, username) values (?, ?) 
+2021-06-18 09:08:24.933 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==> Parameters: java.io.ByteArrayInputStream@1f3e6ad6(ByteArrayInputStream), [object HTMLInputElement](String)
+2021-06-18 09:08:24.933 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==> Parameters: java.io.ByteArrayInputStream@1f3e6ad6(ByteArrayInputStream), [object HTMLInputElement](String)
+2021-06-18 09:10:01.600 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==>  Preparing: insert into pic (picture, username) values (?, ?) 
+2021-06-18 09:10:01.600 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==>  Preparing: insert into pic (picture, username) values (?, ?) 
+2021-06-18 09:10:01.624 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==> Parameters: java.io.ByteArrayInputStream@529fb154(ByteArrayInputStream), admin(String)
+2021-06-18 09:10:01.624 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==> Parameters: java.io.ByteArrayInputStream@529fb154(ByteArrayInputStream), admin(String)
+2021-06-18 09:10:01.898 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -<==    Updates: 1
+2021-06-18 09:10:01.898 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -<==    Updates: 1
+2021-06-18 09:22:47.753 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:22:47.753 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:22:47.777 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:22:47.777 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:22:47.842 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:22:47.842 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:24:23.668 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:24:23.668 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:24:23.693 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:24:23.693 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:24:23.716 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:24:23.716 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:27:06.408 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:27:06.408 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:27:06.434 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:27:06.434 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:27:06.456 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:27:06.456 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:28:08.158 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:28:08.158 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:28:08.182 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:28:08.182 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:28:08.204 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:28:08.204 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:36:39.928 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 09:36:39.928 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 09:36:39.978 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:36:39.978 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:36:40.165 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:36:40.165 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:41:13.474 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==>  Preparing: insert into pic (picture, username) values (?, ?) 
+2021-06-18 09:41:13.474 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==>  Preparing: insert into pic (picture, username) values (?, ?) 
+2021-06-18 09:41:13.503 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==> Parameters: java.io.ByteArrayInputStream@2181d2a7(ByteArrayInputStream), admin(String)
+2021-06-18 09:41:13.503 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -==> Parameters: java.io.ByteArrayInputStream@2181d2a7(ByteArrayInputStream), admin(String)
+2021-06-18 09:41:13.620 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -<==    Updates: 1
+2021-06-18 09:41:13.620 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.insertpic -<==    Updates: 1
+2021-06-18 09:42:22.265 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 09:42:22.265 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 09:42:22.291 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:42:22.291 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:42:22.312 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:42:22.312 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:47:19.531 [http-nio-8085-exec-9] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:47:19.531 [http-nio-8085-exec-9] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:47:19.559 [http-nio-8085-exec-9] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:47:19.559 [http-nio-8085-exec-9] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:47:19.577 [http-nio-8085-exec-9] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:47:19.577 [http-nio-8085-exec-9] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:48:02.662 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:48:02.662 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:48:02.684 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:48:02.684 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:48:02.709 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:48:02.709 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:56:39.253 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:56:39.253 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:56:39.277 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:56:39.277 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:56:39.302 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:56:39.302 [http-nio-8085-exec-4] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:58:00.168 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:58:00.168 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 09:58:00.196 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:58:00.196 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 09:58:00.215 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 09:58:00.215 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:00:44.607 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 10:00:44.607 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 10:00:44.670 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:00:44.670 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:00:44.691 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:00:44.691 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:02:17.097 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 10:02:17.097 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select * from pic where username=? 
+2021-06-18 10:02:17.127 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:02:17.127 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:02:17.158 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:02:17.158 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:04:04.359 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:04:04.359 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:04:04.386 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:04:04.386 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:04:04.407 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:04:04.407 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:06:17.712 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:06:17.712 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:06:17.741 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:06:17.741 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:06:17.775 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:06:17.775 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:06:20.989 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:06:20.989 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:06:20.990 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:06:20.990 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:06:21.129 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:06:21.129 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:09:58.266 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:09:58.266 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:09:58.289 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:09:58.289 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:09:58.316 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:09:58.316 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:10:00.372 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:10:00.372 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:10:00.373 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:10:00.373 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:10:00.386 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:10:00.386 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:11:44.817 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:11:44.817 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:11:44.846 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:11:44.846 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:11:44.866 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:11:44.866 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:11:46.915 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:11:46.915 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:11:46.916 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:11:46.916 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:11:46.929 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:11:46.929 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:13:17.016 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:13:17.016 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:13:17.038 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:13:17.038 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:13:17.057 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:13:17.057 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:13:19.299 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:13:19.299 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:13:19.300 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:13:19.300 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:13:19.307 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:13:19.307 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:14:05.127 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:14:05.127 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:14:05.154 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:14:05.154 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:14:05.174 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:14:05.174 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:14:07.282 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:14:07.282 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:14:07.283 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:14:07.283 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:14:07.289 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:14:07.289 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:16:03.004 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:16:03.004 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:16:03.030 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:16:03.030 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:16:03.049 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:16:03.049 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:16:05.299 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:16:05.299 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:16:05.300 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:16:05.300 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:16:05.311 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:16:05.311 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:17:10.508 [http-nio-8085-exec-7] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:17:10.508 [http-nio-8085-exec-7] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:17:10.535 [http-nio-8085-exec-7] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:17:10.535 [http-nio-8085-exec-7] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:17:10.555 [http-nio-8085-exec-7] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:17:10.555 [http-nio-8085-exec-7] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:17:12.789 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:17:12.789 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:17:12.789 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:17:12.789 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:17:12.800 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:17:12.800 [http-nio-8085-exec-7] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:23:03.202 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:23:03.202 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:23:03.225 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:23:03.225 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:23:03.251 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:23:03.251 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:23:05.330 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:23:05.330 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:23:05.333 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:23:05.333 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:23:05.335 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:23:05.335 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:24:13.429 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:24:13.429 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:24:13.451 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:24:13.451 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:24:13.477 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:24:13.477 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:24:15.534 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:24:15.534 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:24:15.535 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:24:15.535 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:24:15.539 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:24:15.539 [http-nio-8085-exec-8] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:24:23.089 [http-nio-8085-exec-9] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-18 10:24:23.089 [http-nio-8085-exec-9] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-18 10:24:23.100 [http-nio-8085-exec-9] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-18 10:24:23.100 [http-nio-8085-exec-9] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-18 10:24:23.209 [http-nio-8085-exec-9] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-18 10:24:23.209 [http-nio-8085-exec-9] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-18 10:31:00.274 [http-nio-8085-exec-2] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:31:00.274 [http-nio-8085-exec-2] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:31:00.297 [http-nio-8085-exec-2] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:31:00.297 [http-nio-8085-exec-2] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:31:00.322 [http-nio-8085-exec-2] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:31:00.322 [http-nio-8085-exec-2] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:31:02.444 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:31:02.444 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:31:02.445 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:31:02.445 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:31:02.447 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:31:02.447 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:31:03.089 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-18 10:31:03.089 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-18 10:31:03.089 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-18 10:31:03.089 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-18 10:31:03.099 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-18 10:31:03.099 [http-nio-8085-exec-8] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-18 10:33:08.364 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:33:08.364 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:33:08.365 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:33:08.365 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:33:08.366 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:33:08.366 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:36:37.008 [http-nio-8085-exec-1] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:36:37.008 [http-nio-8085-exec-1] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:36:37.029 [http-nio-8085-exec-1] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:36:37.029 [http-nio-8085-exec-1] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:36:37.048 [http-nio-8085-exec-1] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:36:37.048 [http-nio-8085-exec-1] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:36:39.481 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:36:39.481 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:36:39.482 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:36:39.482 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:36:39.484 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:36:39.484 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:39:14.576 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:39:14.576 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:39:14.606 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: adm(String)
+2021-06-18 10:39:14.606 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: adm(String)
+2021-06-18 10:39:14.644 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 0
+2021-06-18 10:39:14.644 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 0
+2021-06-18 10:40:26.365 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:40:26.365 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:40:26.387 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: adm(String)
+2021-06-18 10:40:26.387 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: adm(String)
+2021-06-18 10:40:26.404 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 0
+2021-06-18 10:40:26.404 [http-nio-8085-exec-8] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 0
+2021-06-18 10:40:32.201 [http-nio-8085-exec-9] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:40:32.201 [http-nio-8085-exec-9] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:40:32.202 [http-nio-8085-exec-9] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:40:32.202 [http-nio-8085-exec-9] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:40:32.212 [http-nio-8085-exec-9] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:40:32.212 [http-nio-8085-exec-9] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:40:34.334 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:40:34.334 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:40:34.335 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:40:34.335 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:40:34.337 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:40:34.337 [http-nio-8085-exec-9] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:40:34.729 [http-nio-8085-exec-10] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-18 10:40:34.729 [http-nio-8085-exec-10] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-18 10:40:34.729 [http-nio-8085-exec-10] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-18 10:40:34.729 [http-nio-8085-exec-10] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-18 10:40:34.749 [http-nio-8085-exec-10] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-18 10:40:34.749 [http-nio-8085-exec-10] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-18 10:52:34.259 [http-nio-8085-exec-5] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:52:34.259 [http-nio-8085-exec-5] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:52:34.286 [http-nio-8085-exec-5] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:52:34.286 [http-nio-8085-exec-5] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:52:34.304 [http-nio-8085-exec-5] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:52:34.304 [http-nio-8085-exec-5] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:52:48.330 [http-nio-8085-exec-2] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:52:48.330 [http-nio-8085-exec-2] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:52:48.331 [http-nio-8085-exec-2] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:52:48.331 [http-nio-8085-exec-2] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:52:48.332 [http-nio-8085-exec-2] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:52:48.332 [http-nio-8085-exec-2] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:52:48.889 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:52:48.889 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:52:48.890 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:52:48.890 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:52:48.897 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:52:48.897 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:52:55.387 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:52:55.387 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:52:55.394 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:52:55.394 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:52:55.395 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:52:55.395 [http-nio-8085-exec-3] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:55:56.093 [http-nio-8085-exec-5] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:55:56.093 [http-nio-8085-exec-5] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==>  Preparing: select picture from pic where username=? 
+2021-06-18 10:55:56.099 [http-nio-8085-exec-5] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:55:56.099 [http-nio-8085-exec-5] DEBUG c.a.q.dao.UserEntityMapper.selectpic -==> Parameters: admin(String)
+2021-06-18 10:55:56.101 [http-nio-8085-exec-5] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:55:56.101 [http-nio-8085-exec-5] DEBUG c.a.q.dao.UserEntityMapper.selectpic -<==      Total: 1
+2021-06-18 10:55:56.550 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:55:56.550 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.selectAllByName -==>  Preparing: select id, username, password, status from user_info where username=? and status="1" 
+2021-06-18 10:55:56.550 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:55:56.550 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.selectAllByName -==> Parameters: admin(String)
+2021-06-18 10:55:56.551 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:55:56.551 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.selectAllByName -<==      Total: 1
+2021-06-18 10:55:56.901 [http-nio-8085-exec-7] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-18 10:55:56.901 [http-nio-8085-exec-7] DEBUG c.a.q.d.P.queryProjectList -==>  Preparing: SELECT id,project_name as projectName,project_content as projectContent,creation_date as createDate FROM project_info WHERE 1 = 1 AND created_by = ? ORDER BY creation_date DESC 
+2021-06-18 10:55:56.901 [http-nio-8085-exec-7] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-18 10:55:56.901 [http-nio-8085-exec-7] DEBUG c.a.q.d.P.queryProjectList -==> Parameters: admin(String)
+2021-06-18 10:55:56.921 [http-nio-8085-exec-7] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-18 10:55:56.921 [http-nio-8085-exec-7] DEBUG c.a.q.d.P.queryProjectList -<==      Total: 3
+2021-06-18 14:17:38.038 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:17:38.038 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:17:38.098 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:17:38.098 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:17:38.128 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:17:38.128 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:22:21.281 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:22:21.281 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:22:21.301 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:22:21.301 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:22:21.401 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:22:21.401 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:24:57.994 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:24:57.994 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:24:58.024 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:24:58.024 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:24:58.034 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:24:58.034 [http-nio-8085-exec-1] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:25:09.234 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:25:09.234 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:25:09.234 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:25:09.234 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:25:09.234 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:25:09.234 [http-nio-8085-exec-2] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:25:12.344 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:25:12.344 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:25:12.344 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:25:12.344 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:25:12.344 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:25:12.344 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:25:13.941 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:25:13.941 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:25:13.941 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:25:13.941 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:25:13.941 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:25:13.941 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:25:15.407 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:25:15.407 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:25:15.407 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:25:15.407 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:25:15.407 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:25:15.407 [http-nio-8085-exec-5] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:30:30.379 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:30:30.379 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:30:30.389 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:30:30.389 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:30:30.409 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:30:30.409 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:35:08.270 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:35:08.270 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:35:08.300 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:35:08.300 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:35:08.320 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:35:08.320 [http-nio-8085-exec-4] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:38:44.680 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:38:44.680 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:38:44.700 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:38:44.700 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:38:44.710 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:38:44.710 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:42:11.440 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:42:11.440 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:42:11.460 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:42:11.460 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:42:11.480 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:42:11.480 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:49:20.019 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:49:20.019 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:49:20.039 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:49:20.039 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:49:20.059 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:49:20.059 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:50:51.434 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:50:51.434 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==>  Preparing: SELECT * FROM people 
+2021-06-18 14:50:51.464 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:50:51.464 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -==> Parameters: 
+2021-06-18 14:50:51.484 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4
+2021-06-18 14:50:51.484 [http-nio-8085-exec-3] DEBUG c.a.q.d.U.queryProblemList -<==      Total: 4

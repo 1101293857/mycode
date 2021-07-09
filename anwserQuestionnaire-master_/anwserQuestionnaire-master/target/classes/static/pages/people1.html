@@ -1,0 +1,126 @@
+<!--<%@ page language="java" contentType="text/html; charset=UTF-8"-->
+<!--    pageEncoding="UTF-8"%>-->
+<!--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.box1{
+	width:400px;
+	height:250px;
+	float:left;
+	opacity: 0.5;
+}
+.box1 input{
+	width:27px;
+	margin-left:170px;
+	float:left;
+}
+.box2 input{
+	width:27px;
+	margin-left:170px;
+	float:left;
+}
+.box2{
+	width:400px;
+	height:250px;
+	float:left;
+	opacity: 0.5;
+}
+.changediv{
+	width:50px;
+	height:250px;
+	float:left;
+}
+.changediv img{
+	width:20px;
+	height:20px;
+	margin-left:15px;
+	float:left;
+	
+}
+.text{
+	width:300px;
+	height:200px;
+	float:left;
+	margin-left:50px;
+	margin-top:20px;
+}
+.text1{
+	width:300px;
+	height:200px;
+	float:left;
+	margin-left:50px;
+	margin-top:20px;
+}
+.body-top{
+	opacity: 0.9;
+	width:850px;
+
+}
+.adiv a{
+	margin-left:730px;
+}
+.inputdiv input{
+	margin-left:380px;
+}
+</style>
+</head>
+<body class="body-top">
+	<div class="adiv">
+		<button id="capture1" style="width: 10% ;height: 25px ;font-size: 20px ;border-radius: 100px ;background-color: #fa911e;border: none ; cursor: pointer;" onclick="window.location.href = 'login.html'">返回</button>
+	</div>
+	<div class="box1">
+		<input type="text" value="问题" class="mySelect">
+		<textarea rows="3" cols="20" class="text" name="text" ></textarea>
+<!--		<textarea rows="3" cols="20" class="text" name="text" >${text_left }</textarea>-->
+	</div>
+	<div class="changediv">
+<!--		<img src="images/indexjsp/change.png" onclick="change(this)">-->
+	</div>
+	<div class="box2">
+		<input type="text" value="回复" class="mySelect1">
+<!--		<textarea rows="3" cols="20" class="text1" name="text1" >${text_right }</textarea>-->
+		<textarea rows="3" cols="20" class="text1" name="text1" ></textarea>
+	</div>
+	<div class="inputdiv">
+		<input type="button" class="Button" value="发送" onclick="send(this)">
+	</div>
+</body>
+<script src="../plugins/jQuery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	function send(obj)
+	{
+		var myse = $(".mySelect").val();
+		var myse1 = $(".mySelect1").val();
+		var myte = $(".text").val();
+		var myte2 = $(".text1");
+		var params = {
+				// "select":myse,
+				// "select1":myse1,
+				"text":myte
+		};
+		$.ajax({
+				url:"/admin/peopleRes",
+				type:"post",
+				data:params,
+				success:function(data){
+					myte2.val(data);
+				},
+				error:function(data){
+					alert(2);
+				}
+		});
+	}
+	function change(obj)
+	{
+		var myse = $(".mySelect").val();
+		var myse1 = $(".mySelect1").val();
+		$(".mySelect").val(myse1);
+		$(".mySelect1").val(myse);
+	}
+	
+</script>
+</html>

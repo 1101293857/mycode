@@ -1,0 +1,180 @@
+2021-06-10 14:20:54.712 [main] INFO  c.a.q.QuestionnairewebadminApplication -Starting QuestionnairewebadminApplication on DESKTOP-B7JV3S6 with PID 16104 (D:\C_files\zzq\anwserQuestionnaire-master_\anwserQuestionnaire-master\target\classes started by DELL in D:\C_files\zzq\anwserQuestionnaire-master_\anwserQuestionnaire-master)
+2021-06-10 14:20:54.714 [main] INFO  c.a.q.QuestionnairewebadminApplication -The following profiles are active: dev
+2021-06-10 14:20:54.780 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@236e3f4e: startup date [Thu Jun 10 14:20:54 CST 2021]; root of context hierarchy
+2021-06-10 14:20:55.461 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-10 14:20:55.990 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$80f7e5ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-10 14:20:57.565 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8085 (http)
+2021-06-10 14:20:57.581 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8085"]
+2021-06-10 14:20:57.592 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2021-06-10 14:20:57.592 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-06-10 14:20:57.600 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\tools\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\MinGW\bin;D:\Program Files\cuDNN7.4.2.24\cuda\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64;D:\tools\mysql-5.7.22-winx64\bin;D:\tools\Tomcat\bin;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\tools\JDK\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;D:\VS code\Microsoft VS Code\bin;C:\MinGW\bin;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Users\DELL\.dotnet\tools;;.]
+2021-06-10 14:20:57.706 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2021-06-10 14:20:57.706 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2926 ms
+2021-06-10 14:20:57.791 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+2021-06-10 14:20:57.795 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-06-10 14:20:57.795 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-06-10 14:20:57.795 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-06-10 14:20:57.795 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2021-06-10 14:20:57.795 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'corsFilter' to: [/*]
+2021-06-10 14:20:58.223 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-10 14:20:58.523 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@236e3f4e: startup date [Thu Jun 10 14:20:54 CST 2021]; root of context hierarchy
+2021-06-10 14:20:58.582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/addProjectInfo],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.addProjectInfo(com.aim.questionnaire.dao.entity.ProjectEntity)
+2021-06-10 14:20:58.582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/queryProjectList],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.queryProjectList(com.aim.questionnaire.dao.entity.ProjectEntity)
+2021-06-10 14:20:58.582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/modifyProjectInfo],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.modifyProjectInfo(com.aim.questionnaire.dao.entity.ProjectEntity)
+2021-06-10 14:20:58.583 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/queryAllProjectName],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.queryAllProjectName()
+2021-06-10 14:20:58.583 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/deleteProjectById],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.deleteProjectById(com.aim.questionnaire.dao.entity.ProjectEntity)
+2021-06-10 14:20:58.584 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/admin/userLogin],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.UserController.UserLogin(java.util.Map<java.lang.String, java.lang.Object>)
+2021-06-10 14:20:58.585 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/admin/addUserInfo],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.UserController.addUserInfo(com.aim.questionnaire.dao.entity.UserEntity) throws java.text.ParseException
+2021-06-10 14:20:58.587 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-06-10 14:20:58.587 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-06-10 14:20:58.616 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-10 14:20:58.616 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-10 14:20:59.313 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2021-06-10 14:20:59.832 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2021-06-10 14:20:59.870 [main] INFO  org.quartz.impl.StdSchedulerFactory -Using default implementation for ThreadExecutor
+2021-06-10 14:20:59.884 [main] INFO  o.quartz.core.SchedulerSignalerImpl -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-06-10 14:20:59.885 [main] INFO  org.quartz.core.QuartzScheduler -Quartz Scheduler v.2.2.1 created.
+2021-06-10 14:20:59.887 [main] INFO  org.quartz.simpl.RAMJobStore -RAMJobStore initialized.
+2021-06-10 14:20:59.887 [main] INFO  org.quartz.core.QuartzScheduler -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-06-10 14:20:59.888 [main] INFO  org.quartz.impl.StdSchedulerFactory -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-06-10 14:20:59.888 [main] INFO  org.quartz.impl.StdSchedulerFactory -Quartz scheduler version: 2.2.1
+2021-06-10 14:20:59.888 [main] INFO  org.quartz.core.QuartzScheduler -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@1f43cab7
+2021-06-10 14:20:59.953 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2021-06-10 14:20:59.954 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-06-10 14:20:59.958 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-06-10 14:20:59.964 [main] INFO  o.s.c.s.DefaultLifecycleProcessor -Starting beans in phase 2147483647
+2021-06-10 14:20:59.965 [main] INFO  o.s.s.quartz.SchedulerFactoryBean -Starting Quartz Scheduler now
+2021-06-10 14:20:59.965 [main] INFO  org.quartz.core.QuartzScheduler -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-06-10 14:20:59.973 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8085"]
+2021-06-10 14:20:59.982 [main] INFO  o.a.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+2021-06-10 14:20:59.996 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8085 (http) with context path ''
+2021-06-10 14:20:59.999 [main] INFO  c.a.q.QuestionnairewebadminApplication -Started QuestionnairewebadminApplication in 5.634 seconds (JVM running for 6.285)
+2021-06-10 14:21:33.755 [main] INFO  c.a.q.QuestionnairewebadminApplication -Starting QuestionnairewebadminApplication on DESKTOP-B7JV3S6 with PID 6336 (D:\C_files\zzq\anwserQuestionnaire-master_\anwserQuestionnaire-master\target\classes started by DELL in D:\C_files\zzq\anwserQuestionnaire-master_\anwserQuestionnaire-master)
+2021-06-10 14:21:33.757 [main] INFO  c.a.q.QuestionnairewebadminApplication -The following profiles are active: dev
+2021-06-10 14:21:33.814 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@236e3f4e: startup date [Thu Jun 10 14:21:33 CST 2021]; root of context hierarchy
+2021-06-10 14:21:34.417 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-10 14:21:34.938 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6c636994] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-10 14:21:36.423 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8085 (http)
+2021-06-10 14:21:36.438 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8085"]
+2021-06-10 14:21:36.448 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2021-06-10 14:21:36.449 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-06-10 14:21:36.457 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\tools\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\MinGW\bin;D:\Program Files\cuDNN7.4.2.24\cuda\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64;D:\tools\mysql-5.7.22-winx64\bin;D:\tools\Tomcat\bin;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\tools\JDK\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;D:\VS code\Microsoft VS Code\bin;C:\MinGW\bin;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Users\DELL\.dotnet\tools;;.]
+2021-06-10 14:21:36.560 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2021-06-10 14:21:36.561 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2746 ms
+2021-06-10 14:21:36.643 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+2021-06-10 14:21:36.647 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-06-10 14:21:36.647 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-06-10 14:21:36.647 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-06-10 14:21:36.647 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2021-06-10 14:21:36.648 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'corsFilter' to: [/*]
+2021-06-10 14:21:37.058 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-10 14:21:37.355 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@236e3f4e: startup date [Thu Jun 10 14:21:33 CST 2021]; root of context hierarchy
+2021-06-10 14:21:37.418 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/deleteProjectById],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.deleteProjectById(com.aim.questionnaire.dao.entity.ProjectEntity)
+2021-06-10 14:21:37.419 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/modifyProjectInfo],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.modifyProjectInfo(com.aim.questionnaire.dao.entity.ProjectEntity)
+2021-06-10 14:21:37.420 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/queryAllProjectName],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.queryAllProjectName()
+2021-06-10 14:21:37.420 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/queryProjectList],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.queryProjectList(com.aim.questionnaire.dao.entity.ProjectEntity)
+2021-06-10 14:21:37.420 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/addProjectInfo],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.addProjectInfo(com.aim.questionnaire.dao.entity.ProjectEntity)
+2021-06-10 14:21:37.422 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/admin/userLogin],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.UserController.UserLogin(java.util.Map<java.lang.String, java.lang.Object>)
+2021-06-10 14:21:37.423 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/admin/addUserInfo],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.UserController.addUserInfo(com.aim.questionnaire.dao.entity.UserEntity) throws java.text.ParseException
+2021-06-10 14:21:37.425 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-06-10 14:21:37.426 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-06-10 14:21:37.460 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-10 14:21:37.460 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-10 14:21:38.115 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2021-06-10 14:21:38.310 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2021-06-10 14:21:38.360 [main] INFO  org.quartz.impl.StdSchedulerFactory -Using default implementation for ThreadExecutor
+2021-06-10 14:21:38.373 [main] INFO  o.quartz.core.SchedulerSignalerImpl -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-06-10 14:21:38.374 [main] INFO  org.quartz.core.QuartzScheduler -Quartz Scheduler v.2.2.1 created.
+2021-06-10 14:21:38.375 [main] INFO  org.quartz.simpl.RAMJobStore -RAMJobStore initialized.
+2021-06-10 14:21:38.376 [main] INFO  org.quartz.core.QuartzScheduler -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-06-10 14:21:38.376 [main] INFO  org.quartz.impl.StdSchedulerFactory -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-06-10 14:21:38.376 [main] INFO  org.quartz.impl.StdSchedulerFactory -Quartz scheduler version: 2.2.1
+2021-06-10 14:21:38.376 [main] INFO  org.quartz.core.QuartzScheduler -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@c7f4457
+2021-06-10 14:21:38.441 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2021-06-10 14:21:38.442 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-06-10 14:21:38.446 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-06-10 14:21:38.450 [main] INFO  o.s.c.s.DefaultLifecycleProcessor -Starting beans in phase 2147483647
+2021-06-10 14:21:38.451 [main] INFO  o.s.s.quartz.SchedulerFactoryBean -Starting Quartz Scheduler now
+2021-06-10 14:21:38.451 [main] INFO  org.quartz.core.QuartzScheduler -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-06-10 14:21:38.462 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8085"]
+2021-06-10 14:21:38.477 [main] INFO  o.a.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+2021-06-10 14:21:38.491 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8085 (http) with context path ''
+2021-06-10 14:21:38.494 [main] INFO  c.a.q.QuestionnairewebadminApplication -Started QuestionnairewebadminApplication in 5.079 seconds (JVM running for 5.716)
+2021-06-10 14:21:47.893 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-06-10 14:21:47.893 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2021-06-10 14:21:47.913 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2021-06-10 14:23:18.058 [main] INFO  c.a.q.QuestionnairewebadminApplication -Starting QuestionnairewebadminApplication on DESKTOP-B7JV3S6 with PID 964 (D:\C_files\zzq\anwserQuestionnaire-master_\anwserQuestionnaire-master\target\classes started by DELL in D:\C_files\zzq\anwserQuestionnaire-master_\anwserQuestionnaire-master)
+2021-06-10 14:23:18.060 [main] INFO  c.a.q.QuestionnairewebadminApplication -The following profiles are active: dev
+2021-06-10 14:23:18.151 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@236e3f4e: startup date [Thu Jun 10 14:23:18 CST 2021]; root of context hierarchy
+2021-06-10 14:23:19.357 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-10 14:23:20.003 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1d9747aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-10 14:23:22.259 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8085 (http)
+2021-06-10 14:23:22.285 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8085"]
+2021-06-10 14:23:22.309 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2021-06-10 14:23:22.309 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-06-10 14:23:22.330 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\tools\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\MinGW\bin;D:\Program Files\cuDNN7.4.2.24\cuda\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64;D:\tools\mysql-5.7.22-winx64\bin;D:\tools\Tomcat\bin;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\tools\JDK\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;D:\VS code\Microsoft VS Code\bin;C:\MinGW\bin;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Users\DELL\.dotnet\tools;;.]
+2021-06-10 14:23:22.509 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2021-06-10 14:23:22.509 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 4358 ms
+2021-06-10 14:23:22.633 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+2021-06-10 14:23:22.637 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-06-10 14:23:22.637 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-06-10 14:23:22.637 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-06-10 14:23:22.637 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2021-06-10 14:23:22.638 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'corsFilter' to: [/*]
+2021-06-10 14:23:23.215 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-10 14:23:23.851 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@236e3f4e: startup date [Thu Jun 10 14:23:18 CST 2021]; root of context hierarchy
+2021-06-10 14:23:24.010 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/addProjectInfo],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.addProjectInfo(com.aim.questionnaire.dao.entity.ProjectEntity)
+2021-06-10 14:23:24.012 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/queryProjectList],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.queryProjectList(com.aim.questionnaire.dao.entity.ProjectEntity)
+2021-06-10 14:23:24.013 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/deleteProjectById],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.deleteProjectById(com.aim.questionnaire.dao.entity.ProjectEntity)
+2021-06-10 14:23:24.013 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/modifyProjectInfo],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.modifyProjectInfo(com.aim.questionnaire.dao.entity.ProjectEntity)
+2021-06-10 14:23:24.014 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/queryAllProjectName],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.ProjectController.queryAllProjectName()
+2021-06-10 14:23:24.018 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/admin/userLogin],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.UserController.UserLogin(java.util.Map<java.lang.String, java.lang.Object>)
+2021-06-10 14:23:24.018 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/admin/addUserInfo],methods=[POST],produces=[application/json]}" onto public com.aim.questionnaire.beans.HttpResponseEntity com.aim.questionnaire.controller.UserController.addUserInfo(com.aim.questionnaire.dao.entity.UserEntity) throws java.text.ParseException
+2021-06-10 14:23:24.023 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-06-10 14:23:24.024 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-06-10 14:23:24.092 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-10 14:23:24.092 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-10 14:23:25.814 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2021-06-10 14:23:26.244 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2021-06-10 14:23:26.337 [main] INFO  org.quartz.impl.StdSchedulerFactory -Using default implementation for ThreadExecutor
+2021-06-10 14:23:26.377 [main] INFO  o.quartz.core.SchedulerSignalerImpl -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-06-10 14:23:26.378 [main] INFO  org.quartz.core.QuartzScheduler -Quartz Scheduler v.2.2.1 created.
+2021-06-10 14:23:26.382 [main] INFO  org.quartz.simpl.RAMJobStore -RAMJobStore initialized.
+2021-06-10 14:23:26.386 [main] INFO  org.quartz.core.QuartzScheduler -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-06-10 14:23:26.386 [main] INFO  org.quartz.impl.StdSchedulerFactory -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-06-10 14:23:26.386 [main] INFO  org.quartz.impl.StdSchedulerFactory -Quartz scheduler version: 2.2.1
+2021-06-10 14:23:26.387 [main] INFO  org.quartz.core.QuartzScheduler -JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@22dc59b2
+2021-06-10 14:23:26.622 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2021-06-10 14:23:26.625 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-06-10 14:23:26.635 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-06-10 14:23:26.644 [main] INFO  o.s.c.s.DefaultLifecycleProcessor -Starting beans in phase 2147483647
+2021-06-10 14:23:26.644 [main] INFO  o.s.s.quartz.SchedulerFactoryBean -Starting Quartz Scheduler now
+2021-06-10 14:23:26.645 [main] INFO  org.quartz.core.QuartzScheduler -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-06-10 14:23:26.673 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8085"]
+2021-06-10 14:23:26.700 [main] INFO  o.a.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+2021-06-10 14:23:26.774 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8085 (http) with context path ''
+2021-06-10 14:23:26.781 [main] INFO  c.a.q.QuestionnairewebadminApplication -Started QuestionnairewebadminApplication in 9.215 seconds (JVM running for 10.026)
+2021-06-10 14:23:28.794 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-06-10 14:23:28.795 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2021-06-10 14:23:28.830 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
